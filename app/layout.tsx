@@ -3,7 +3,6 @@ import { Manrope, Public_Sans } from "next/font/google";
 import Link from "next/link";
 import "./globals.css";
 
-export const dynamic = "force-dynamic";
 
 const manrope = Manrope({
   subsets: ["latin"],
