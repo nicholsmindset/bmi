@@ -1,26 +1,413 @@
 @import "tailwindcss";
 
+@theme {
+  /* Primary — HPB Blue (authority anchor, unchanged) */
+  --color-primary: #005EB8;
+  --color-primary-dark: #003F7F;
+  --color-primary-light: #EEF4FF;
+  --color-primary-container: #DCE9FF;
+
+  /* Secondary — Health Green */
+  --color-secondary: #007F5F;
+  --color-secondary-dark: #005140;
+  --color-secondary-light: #E6F7F1;
+  --color-secondary-container: #C5EDDC;
+
+  /* Tertiary */
+  --color-tertiary: #3D4560;
+  --color-tertiary-light: #EEF0F8;
+
+  /* Neutral */
+  --color-neutral: #8A8FA0;
+
+  /* Surface — subtle lavender warmth */
+  --color-surface: #FFFFFF;
+  --color-surface-low: #F6F4FF;
+  --color-surface-container: #F0EEFF;
+  --color-surface-high: #E8E4F8;
+  --color-surface-highest: #DDD8F4;
+
+  /* On Surface */
+  --color-on-surface: #0F1117;
+  --color-on-surface-variant: #44475A;
+
+  /* Outline */
+  --color-outline: #8A8D9E;
+  --color-outline-variant: #E0DDEF;
+
+  /* Status */
+  --color-error: #EF4444;
+  --color-warning: #F59E0B;
+  --color-success: #10B981;
+
+  /* BMI category colors — pastel */
+  --color-bmi-underweight: #60A5FA;
+  --color-bmi-healthy: #34D399;
+  --color-bmi-overweight: #FB923C;
+  --color-bmi-obese1: #F87171;
+  --color-bmi-obese2: #E879A0;
+
+  /* Calculator accent colors — pastel */
+  --color-calc-energy: #9B72CF;
+  --color-calc-fitness: #2DD4BF;
+  --color-calc-sleep: #818CF8;
+  --color-calc-risk: #F87171;
+
+  /* Typography */
+  --font-headline: 'Manrope', sans-serif;
+  --font-body: 'Public Sans', sans-serif;
+
+  /* Border radius */
+  --radius-4xl: 2rem;
+}
+
+/* Raw CSS variables for inline style usage */
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  --color-primary: #005EB8;
+  --color-primary-dark: #003F7F;
+  --color-primary-light: #EEF4FF;
+  --color-primary-container: #DCE9FF;
+  --color-secondary: #007F5F;
+  --color-secondary-dark: #005140;
+  --color-secondary-light: #E6F7F1;
+  --color-secondary-container: #C5EDDC;
+  --color-tertiary: #3D4560;
+  --color-tertiary-light: #EEF0F8;
+  --color-neutral: #8A8FA0;
+  --color-surface: #FFFFFF;
+  --color-surface-low: #F6F4FF;
+  --color-surface-container: #F0EEFF;
+  --color-on-surface: #0F1117;
+  --color-on-surface-variant: #44475A;
+  --color-outline: #8A8D9E;
+  --color-outline-variant: #E0DDEF;
+  --color-error: #EF4444;
+  --color-warning: #F59E0B;
+  --color-success: #10B981;
+  /* BMI — pastel */
+  --bmi-underweight: #60A5FA;
+  --bmi-healthy: #34D399;
+  --bmi-overweight: #FB923C;
+  --bmi-obese1: #F87171;
+  --bmi-obese2: #E879A0;
+  /* Calculator accents — pastel */
+  --calc-energy: #9B72CF;
+  --calc-fitness: #2DD4BF;
+  --calc-sleep: #818CF8;
+  --calc-risk: #F87171;
+  --font-manrope: 'Manrope', sans-serif;
+  --font-public-sans: 'Public Sans', sans-serif;
 }
 
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+@keyframes fadeSlideUp {
+  from {
+    opacity: 0;
+    transform: translateY(8px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
   }
 }
 
+.animate-fadeSlideUp {
+  animation: fadeSlideUp 0.3s cubic-bezier(0.34, 1.4, 0.64, 1) forwards;
+}
+
+/* Ad unit CLS prevention */
+.ad-leaderboard {
+  min-height: 90px;
+  max-width: 728px;
+  margin: 0 auto;
+}
+
+.ad-rectangle {
+  min-height: 250px;
+  width: 300px;
+  margin: 0 auto;
+}
+
+.ad-responsive {
+  min-height: 100px;
+  width: 100%;
+}
+
+/* Base */
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+html {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
+}
+
 body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  background-color: #F7F6FF;
+  color: var(--color-on-surface);
+  font-family: 'Public Sans', sans-serif;
+  font-size: 15px;
+  line-height: 1.6;
+}
+
+/* Form elements */
+.calc-input {
+  width: 100%;
+  padding: 0.65rem 1rem;
+  border: 1.5px solid var(--color-outline-variant);
+  border-radius: 12px;
+  font-size: 0.9375rem;
+  color: var(--color-on-surface);
+  background: #fff;
+  transition: border-color 0.15s, box-shadow 0.15s;
+  outline: none;
+  font-family: 'Public Sans', sans-serif;
+}
+
+.calc-input:focus {
+  border-color: var(--color-primary);
+  box-shadow: 0 0 0 4px rgba(0, 94, 184, 0.08);
+}
+
+.calc-input::placeholder {
+  color: #B0B4C4;
+}
+
+/* Number inputs — remove spinners */
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+input[type=number] {
+  -moz-appearance: textfield;
+}
+
+/* Select inputs */
+select.calc-input {
+  appearance: none;
+  -webkit-appearance: none;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' viewBox='0 0 24 24' fill='none' stroke='%238A8D9E' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpolyline points='6 9 12 15 18 9'%3E%3C/polyline%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-position: right 0.875rem center;
+  padding-right: 2.5rem;
+}
+
+/* Toggle pill buttons — fully rounded iOS style */
+.toggle-group {
+  display: inline-flex;
+  background: var(--color-surface-container);
+  border-radius: 100px;
+  padding: 3px;
+  gap: 2px;
+}
+
+.toggle-pill {
+  padding: 0.375rem 1.1rem;
+  border-radius: 100px;
+  font-size: 0.8125rem;
+  font-weight: 600;
+  border: none;
+  cursor: pointer;
+  transition: background 0.18s, color 0.18s, box-shadow 0.18s;
+  color: var(--color-on-surface-variant);
+  background: transparent;
+}
+
+.toggle-pill.active {
+  background: #fff;
+  color: var(--color-primary);
+  box-shadow: 0 1px 4px rgba(80, 60, 160, 0.12), 0 0 0 1px rgba(0,0,0,0.04);
+}
+
+/* Segmented sex selector */
+.sex-btn {
+  flex: 1;
+  padding: 0.55rem 1rem;
+  border: 1.5px solid var(--color-outline-variant);
+  border-radius: 12px;
+  font-size: 0.875rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.15s;
+  background: #fff;
+  color: var(--color-on-surface-variant);
+}
+
+.sex-btn.active {
+  border-color: var(--color-primary);
+  background: var(--color-primary-container);
+  color: var(--color-primary-dark);
+}
+
+/* Calculate button — gradient, iOS rounded */
+.calc-btn {
+  width: 100%;
+  padding: 0.875rem 1.5rem;
+  border-radius: 14px;
+  background: linear-gradient(135deg, #005EB8 0%, #1A7DE8 100%);
+  color: #fff;
+  font-size: 0.9375rem;
+  font-weight: 700;
+  border: none;
+  cursor: pointer;
+  transition: opacity 0.15s, transform 0.1s, box-shadow 0.15s;
+  font-family: 'Public Sans', sans-serif;
+  letter-spacing: 0.01em;
+  box-shadow: 0 4px 14px rgba(0, 94, 184, 0.25);
+}
+
+.calc-btn:hover {
+  opacity: 0.92;
+}
+
+.calc-btn:active {
+  transform: translateY(1px);
+  box-shadow: 0 2px 8px rgba(0, 94, 184, 0.2);
+}
+
+/* Form label */
+.form-label {
+  display: block;
+  font-size: 0.8125rem;
+  font-weight: 600;
+  color: var(--color-on-surface-variant);
+  margin-bottom: 0.375rem;
+  letter-spacing: 0.01em;
+}
+
+/* Result card */
+.result-card {
+  border: 1px solid rgba(160, 150, 210, 0.25);
+  border-radius: 16px;
+  overflow: hidden;
+  background: #fff;
+  box-shadow: 0 2px 12px rgba(100, 80, 180, 0.06);
+}
+
+.result-card-header {
+  padding: 1rem 1.25rem 0.75rem;
+  border-bottom: 1px solid rgba(160, 150, 210, 0.2);
+}
+
+.result-number {
+  font-family: 'Manrope', sans-serif;
+  font-weight: 800;
+  font-size: 3rem;
+  line-height: 1;
+  color: var(--color-primary);
+  letter-spacing: -0.02em;
+}
+
+/* Data table */
+.data-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.875rem;
+}
+
+.data-table th {
+  text-align: left;
+  padding: 0.625rem 1rem;
+  font-weight: 600;
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  background: var(--color-surface-container);
+  color: var(--color-on-surface-variant);
+  border-bottom: 1px solid rgba(160, 150, 210, 0.2);
+}
+
+.data-table td {
+  padding: 0.625rem 1rem;
+  border-bottom: 1px solid rgba(160, 150, 210, 0.15);
+  color: var(--color-on-surface);
+}
+
+.data-table tr:last-child td {
+  border-bottom: none;
+}
+
+.data-table tr:hover td {
+  background: var(--color-surface-low);
+}
+
+/* Stat badge */
+.stat-pill {
+  display: inline-flex;
+  align-items: baseline;
+  gap: 0.25rem;
+  padding: 0.25rem 0.75rem;
+  border-radius: 100px;
+  font-size: 0.8125rem;
+  font-weight: 600;
+}
+
+/* Category badge */
+.category-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.375rem;
+  padding: 0.25rem 0.75rem 0.25rem 0.5rem;
+  border-radius: 8px;
+  font-size: 0.8125rem;
+  font-weight: 700;
+}
+
+/* Info box */
+.info-box {
+  padding: 1rem 1.25rem;
+  border-left: 3px solid var(--color-primary);
+  background: var(--color-surface-container);
+  border-radius: 0 10px 10px 0;
+}
+
+/* Section divider */
+.section-divider {
+  height: 1px;
+  background: var(--color-outline-variant);
+  margin: 2rem 0;
+}
+
+/* FAQ accordion item */
+.faq-item {
+  border-bottom: 1px solid var(--color-outline-variant);
+}
+
+.faq-item:last-child {
+  border-bottom: none;
+}
+
+/* Nav + footer links */
+.nav-link {
+  color: var(--color-on-surface-variant);
+  transition: color 0.15s, background 0.15s;
+  border-radius: 8px;
+}
+
+.nav-link:hover {
+  color: var(--color-primary);
+  background: var(--color-surface-container);
+}
+
+.footer-link {
+  color: var(--color-on-surface-variant);
+  transition: color 0.15s;
+}
+
+.footer-link:hover {
+  color: var(--color-primary);
+}
+
+/* Scrollbar */
+::-webkit-scrollbar {
+  width: 5px;
+}
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+::-webkit-scrollbar-thumb {
+  background: var(--color-outline-variant);
+  border-radius: 3px;
 }

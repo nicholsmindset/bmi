@@ -1,0 +1,55 @@
+import type { Metadata } from "next";
+import CalculatorSection from "@/components/ui/CalculatorSection";
+import MedicalDisclaimer from "@/components/ui/MedicalDisclaimer";
+import CalculatorSchema from "@/components/seo/CalculatorSchema";
+import BMICalculatorClient from "@/components/calculators/BMICalculatorClient";
+
+export const metadata: Metadata = {
+  title: "BMI Calculator for Seniors Singapore — Age 60 and Above",
+  description:
+    "BMI calculator for seniors using Singapore HPB standards. Older adults have different healthy BMI ranges. Learn what BMI means for Singaporeans aged 60+.",
+  alternates: { canonical: "https://bmicalculator.sg/bmi-calculator/seniors" },
+  openGraph: {
+    title: "BMI Calculator for Seniors Singapore — Age 60 and Above",
+    description: "BMI calculator for seniors using Singapore HPB standards. Older adults have different healthy BMI ranges. Learn what BMI means for Singaporeans aged 60+.",
+    url: "https://bmicalculator.sg/bmi-calculator/seniors",
+    type: "website",
+  },
+  twitter: {
+    title: "BMI Calculator for Seniors Singapore — Age 60 and Above",
+    description: "BMI calculator for seniors using Singapore HPB standards. Older adults have different healthy BMI ranges. Learn what BMI means for Singaporeans aged 60+.",
+  },
+};
+
+export default function BMISeniorsPage() {
+  return (
+    <>
+      <CalculatorSchema
+        name="BMI Calculator for Seniors"
+        description="BMI calculator for seniors aged 60+ using Singapore HPB standards."
+        url="https://bmicalculator.sg/bmi-calculator/seniors"
+        lastReviewed="2026-03-31"
+        faqs={[
+          { question: "What is a healthy BMI for seniors in Singapore?", answer: "For adults over 65, some guidelines suggest a slightly higher healthy BMI (up to 23–24) may be protective against frailty and malnutrition. Consult your doctor for personalised advice." },
+          { question: "Is being underweight dangerous for seniors?", answer: "Yes. Underweight seniors (BMI <18.5) are at higher risk of muscle loss, falls, fractures, and malnutrition. Maintaining muscle mass is especially important after 60." },
+          { question: "Should seniors aim to lose weight to lower BMI?", answer: "Not necessarily. Seniors should avoid rapid weight loss without medical supervision as this can cause muscle loss. Focus on maintaining muscle through protein intake and activity." },
+          { question: "Does BMI become less accurate with age?", answer: "Yes. Older adults tend to have less muscle and more body fat at the same BMI. Body composition assessment (waist circumference, muscle mass) gives a more complete picture." },
+        ]}
+        breadcrumbs={[
+          { name: "Home", url: "https://bmicalculator.sg" },
+          { name: "BMI Calculator", url: "https://bmicalculator.sg/bmi-calculator" },
+          { name: "BMI for Seniors", url: "https://bmicalculator.sg/bmi-calculator/seniors" },
+        ]}
+        isMedical
+      />
+      <CalculatorSection
+        badge="For Seniors 60+ · Singapore HPB"
+        title="BMI Calculator for Seniors"
+        description="BMI for seniors aged 60+ requires different interpretation. Maintaining a BMI of 18.5–24 and preserving muscle mass is key. Consult your doctor for personalised guidance."
+      >
+        <BMICalculatorClient />
+        <div className="mt-6"><MedicalDisclaimer context="bmi" /></div>
+      </CalculatorSection>
+    </>
+  );
+}
