@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sitemapindex xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <sitemap>
+    <loc>https://www.bmicalculatorsingapore.com/sitemap-core.xml</loc>
+    <lastmod>2026-03-31</lastmod>
+  </sitemap>
+  <sitemap>
+    <loc>https://www.bmicalculatorsingapore.com/sitemap-ages.xml</loc>
+    <lastmod>2026-03-31</lastmod>
+  </sitemap>
+  <sitemap>
+    <loc>https://www.bmicalculatorsingapore.com/sitemap-ideal-weight.xml</loc>
+    <lastmod>2026-03-31</lastmod>
+  </sitemap>
+  <sitemap>
+    <loc>https://www.bmicalculatorsingapore.com/sitemap-programmatic.xml</loc>
+    <lastmod>2026-03-31</lastmod>
+  </sitemap>
+</sitemapindex>
