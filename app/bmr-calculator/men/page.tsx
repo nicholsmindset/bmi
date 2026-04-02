@@ -8,11 +8,11 @@ export const metadata: Metadata = {
   title: "BMR Calculator for Men — Mifflin-St Jeor Singapore",
   description:
     "Calculate your Basal Metabolic Rate as a man using the Mifflin-St Jeor formula. Formula: BMR = 10×weight + 6.25×height − 5×age + 5.",
-  alternates: { canonical: "https://bmicalculator.sg/bmr-calculator/men" },
+  alternates: { canonical: "https://www.bmicalculatorsingapore.com/bmr-calculator/men" },
   openGraph: {
     title: "BMR Calculator for Men — Mifflin-St Jeor Singapore",
     description: "Calculate your Basal Metabolic Rate as a man using the Mifflin-St Jeor formula. Formula: BMR = 10×weight + 6.25×height − 5×age + 5.",
-    url: "https://bmicalculator.sg/bmr-calculator/men",
+    url: "https://www.bmicalculatorsingapore.com/bmr-calculator/men",
     type: "website",
   },
   twitter: {
@@ -40,13 +40,13 @@ export default function BMRMenPage() {
       <CalculatorSchema
         name="BMR Calculator for Men Singapore"
         description="Calculate Basal Metabolic Rate for men using the Mifflin-St Jeor formula: BMR = 10×weight + 6.25×height − 5×age + 5."
-        url="https://bmicalculator.sg/bmr-calculator/men"
+        url="https://www.bmicalculatorsingapore.com/bmr-calculator/men"
         lastReviewed="2026-03-31"
         faqs={FAQS}
         breadcrumbs={[
-          { name: "Home", url: "https://bmicalculator.sg" },
-          { name: "BMR Calculator", url: "https://bmicalculator.sg/bmr-calculator" },
-          { name: "Men", url: "https://bmicalculator.sg/bmr-calculator/men" },
+          { name: "Home", url: "https://www.bmicalculatorsingapore.com" },
+          { name: "BMR Calculator", url: "https://www.bmicalculatorsingapore.com/bmr-calculator" },
+          { name: "Men", url: "https://www.bmicalculatorsingapore.com/bmr-calculator/men" },
         ]}
       />
 

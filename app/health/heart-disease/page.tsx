@@ -7,11 +7,11 @@ export const metadata: Metadata = {
   title: "Heart Disease Risk in Singapore — Cholesterol, Blood Pressure & Weight",
   description:
     "Cardiovascular disease is Singapore's second leading cause of death. Understand how cholesterol, blood pressure, BMI, and lifestyle affect your heart disease risk and what HPB recommends.",
-  alternates: { canonical: "https://bmicalculator.sg/health/heart-disease" },
+  alternates: { canonical: "https://www.bmicalculatorsingapore.com/health/heart-disease" },
   openGraph: {
     title: "Heart Disease Risk in Singapore — Cholesterol, Blood Pressure & Weight",
     description: "Cardiovascular disease is Singapore's second leading cause of death. Understand how cholesterol, blood pressure, BMI, and lifestyle affect your heart disease risk and what HPB recommends.",
-    url: "https://bmicalculator.sg/health/heart-disease",
+    url: "https://www.bmicalculatorsingapore.com/health/heart-disease",
     type: "website",
   },
   twitter: {
@@ -56,14 +56,14 @@ export default function HeartDiseasePage() {
       <CalculatorSchema
         name="Heart Disease Risk in Singapore"
         description="Guide to cardiovascular disease risk factors, cholesterol, blood pressure, and HPB prevention recommendations."
-        url="https://bmicalculator.sg/health/heart-disease"
+        url="https://www.bmicalculatorsingapore.com/health/heart-disease"
         lastReviewed="2026-03-31"
         isMedical={true}
         faqs={FAQS}
         breadcrumbs={[
-          { name: "Home", url: "https://bmicalculator.sg" },
-          { name: "Health", url: "https://bmicalculator.sg/health" },
-          { name: "Heart Disease", url: "https://bmicalculator.sg/health/heart-disease" },
+          { name: "Home", url: "https://www.bmicalculatorsingapore.com" },
+          { name: "Health", url: "https://www.bmicalculatorsingapore.com/health" },
+          { name: "Heart Disease", url: "https://www.bmicalculatorsingapore.com/health/heart-disease" },
         ]}
       />
 

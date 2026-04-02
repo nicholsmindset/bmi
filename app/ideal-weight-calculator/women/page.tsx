@@ -8,11 +8,11 @@ export const metadata: Metadata = {
   title: "Ideal Weight for Women Singapore — HPB Healthy Weight Range",
   description:
     "Calculate the ideal weight range for women using Singapore HPB Asian BMI standard (18.5–22.9). HPB healthy weight for your height.",
-  alternates: { canonical: "https://bmicalculator.sg/ideal-weight-calculator/women" },
+  alternates: { canonical: "https://www.bmicalculatorsingapore.com/ideal-weight-calculator/women" },
   openGraph: {
     title: "Ideal Weight for Women Singapore — HPB Healthy Weight Range",
     description: "Calculate the ideal weight range for women using Singapore HPB Asian BMI standard (18.5–22.9). HPB healthy weight for your height.",
-    url: "https://bmicalculator.sg/ideal-weight-calculator/women",
+    url: "https://www.bmicalculatorsingapore.com/ideal-weight-calculator/women",
     type: "website",
   },
   twitter: {
@@ -40,13 +40,13 @@ export default function IdealWeightWomenPage() {
       <CalculatorSchema
         name="Ideal Weight for Women Singapore"
         description="Calculate the ideal weight range for women using Singapore HPB Asian BMI standard (18.5–22.9) and the Hamwi formula."
-        url="https://bmicalculator.sg/ideal-weight-calculator/women"
+        url="https://www.bmicalculatorsingapore.com/ideal-weight-calculator/women"
         lastReviewed="2026-03-31"
         faqs={FAQS}
         breadcrumbs={[
-          { name: "Home", url: "https://bmicalculator.sg" },
-          { name: "Ideal Weight Calculator", url: "https://bmicalculator.sg/ideal-weight-calculator" },
-          { name: "Women", url: "https://bmicalculator.sg/ideal-weight-calculator/women" },
+          { name: "Home", url: "https://www.bmicalculatorsingapore.com" },
+          { name: "Ideal Weight Calculator", url: "https://www.bmicalculatorsingapore.com/ideal-weight-calculator" },
+          { name: "Women", url: "https://www.bmicalculatorsingapore.com/ideal-weight-calculator/women" },
         ]}
       />
 

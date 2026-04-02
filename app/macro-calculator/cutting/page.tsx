@@ -8,11 +8,11 @@ export const metadata: Metadata = {
   title: "Cutting Macro Calculator — Protein, Carbs & Fat for Fat Loss",
   description:
     "Calculate your macros for a cutting phase. 40% protein / 30% carbs / 30% fat split to preserve muscle while losing fat.",
-  alternates: { canonical: "https://bmicalculator.sg/macro-calculator/cutting" },
+  alternates: { canonical: "https://www.bmicalculatorsingapore.com/macro-calculator/cutting" },
   openGraph: {
     title: "Cutting Macro Calculator — Protein, Carbs & Fat for Fat Loss",
     description: "Calculate your macros for a cutting phase. 40% protein / 30% carbs / 30% fat split to preserve muscle while losing fat.",
-    url: "https://bmicalculator.sg/macro-calculator/cutting",
+    url: "https://www.bmicalculatorsingapore.com/macro-calculator/cutting",
     type: "website",
   },
   twitter: {
@@ -40,13 +40,13 @@ export default function MacroCuttingPage() {
       <CalculatorSchema
         name="Cutting Macro Calculator"
         description="Calculate macros for a cutting phase using a 40% protein / 30% carbs / 30% fat split to preserve muscle during fat loss."
-        url="https://bmicalculator.sg/macro-calculator/cutting"
+        url="https://www.bmicalculatorsingapore.com/macro-calculator/cutting"
         lastReviewed="2026-03-31"
         faqs={FAQS}
         breadcrumbs={[
-          { name: "Home", url: "https://bmicalculator.sg" },
-          { name: "Macro Calculator", url: "https://bmicalculator.sg/macro-calculator" },
-          { name: "Cutting", url: "https://bmicalculator.sg/macro-calculator/cutting" },
+          { name: "Home", url: "https://www.bmicalculatorsingapore.com" },
+          { name: "Macro Calculator", url: "https://www.bmicalculatorsingapore.com/macro-calculator" },
+          { name: "Cutting", url: "https://www.bmicalculatorsingapore.com/macro-calculator/cutting" },
         ]}
       />
 

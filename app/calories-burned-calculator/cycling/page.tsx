@@ -9,11 +9,11 @@ export const metadata: Metadata = {
   title: "Calories Burned Cycling Calculator Singapore",
   description:
     "Calculate calories burned cycling based on your weight, intensity, and duration. Park connector, commute cycling, and spinning class calorie estimates for Singapore cyclists.",
-  alternates: { canonical: "https://bmicalculator.sg/calories-burned-calculator/cycling" },
+  alternates: { canonical: "https://www.bmicalculatorsingapore.com/calories-burned-calculator/cycling" },
   openGraph: {
     title: "Calories Burned Cycling Calculator Singapore",
     description: "Calculate calories burned cycling based on your weight, intensity, and duration. Park connector, commute cycling, and spinning class calorie estimates for Singapore cyclists.",
-    url: "https://bmicalculator.sg/calories-burned-calculator/cycling",
+    url: "https://www.bmicalculatorsingapore.com/calories-burned-calculator/cycling",
     type: "website",
   },
   twitter: {
@@ -68,15 +68,15 @@ export default function CyclingCaloriesPage() {
       <CalculatorSchema
         name="Calories Burned Cycling Calculator Singapore"
         description="Calculate calories burned cycling based on weight, intensity, and duration."
-        url="https://bmicalculator.sg/calories-burned-calculator/cycling"
+        url="https://www.bmicalculatorsingapore.com/calories-burned-calculator/cycling"
         lastReviewed="2026-03-31"
         faqs={FAQS}
         breadcrumbs={[
-          { name: "Home", url: "https://bmicalculator.sg" },
-          { name: "Calories Burned", url: "https://bmicalculator.sg/calories-burned-calculator" },
+          { name: "Home", url: "https://www.bmicalculatorsingapore.com" },
+          { name: "Calories Burned", url: "https://www.bmicalculatorsingapore.com/calories-burned-calculator" },
           {
             name: "Cycling",
-            url: "https://bmicalculator.sg/calories-burned-calculator/cycling",
+            url: "https://www.bmicalculatorsingapore.com/calories-burned-calculator/cycling",
           },
         ]}
       />

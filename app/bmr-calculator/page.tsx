@@ -9,12 +9,12 @@ export const metadata: Metadata = {
   title: "BMR Calculator Singapore — Basal Metabolic Rate",
   description:
     "Calculate your Basal Metabolic Rate using the Mifflin-St Jeor equation. The most accurate BMR formula for Singaporeans. See your TDEE at all activity levels.",
-  alternates: { canonical: "https://bmicalculator.sg/bmr-calculator" },
+  alternates: { canonical: "https://www.bmicalculatorsingapore.com/bmr-calculator" },
   openGraph: {
     title: "BMR Calculator Singapore — Basal Metabolic Rate",
     description:
       "Calculate your Basal Metabolic Rate using the Mifflin-St Jeor equation. The most accurate BMR formula for Singaporeans. See your TDEE at all activity levels.",
-    url: "https://bmicalculator.sg/bmr-calculator",
+    url: "https://www.bmicalculatorsingapore.com/bmr-calculator",
     type: "website",
   },
   twitter: {
@@ -65,7 +65,7 @@ export default function BMRPage() {
       <CalculatorSchema
         name="BMR Calculator Singapore"
         description="Calculate your Basal Metabolic Rate using the Mifflin-St Jeor equation, optimised for Asian populations."
-        url="https://bmicalculator.sg/bmr-calculator"
+        url="https://www.bmicalculatorsingapore.com/bmr-calculator"
         lastReviewed="2026-03-31"
         faqs={[
           {
@@ -90,8 +90,8 @@ export default function BMRPage() {
           },
         ]}
         breadcrumbs={[
-          { name: "Home", url: "https://bmicalculator.sg" },
-          { name: "BMR Calculator", url: "https://bmicalculator.sg/bmr-calculator" },
+          { name: "Home", url: "https://www.bmicalculatorsingapore.com" },
+          { name: "BMR Calculator", url: "https://www.bmicalculatorsingapore.com/bmr-calculator" },
         ]}
         isMedical
       />

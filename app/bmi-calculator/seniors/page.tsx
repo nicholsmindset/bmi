@@ -8,11 +8,11 @@ export const metadata: Metadata = {
   title: "BMI Calculator for Seniors Singapore — Age 60 and Above",
   description:
     "BMI calculator for seniors using Singapore HPB standards. Older adults have different healthy BMI ranges. Learn what BMI means for Singaporeans aged 60+.",
-  alternates: { canonical: "https://bmicalculator.sg/bmi-calculator/seniors" },
+  alternates: { canonical: "https://www.bmicalculatorsingapore.com/bmi-calculator/seniors" },
   openGraph: {
     title: "BMI Calculator for Seniors Singapore — Age 60 and Above",
     description: "BMI calculator for seniors using Singapore HPB standards. Older adults have different healthy BMI ranges. Learn what BMI means for Singaporeans aged 60+.",
-    url: "https://bmicalculator.sg/bmi-calculator/seniors",
+    url: "https://www.bmicalculatorsingapore.com/bmi-calculator/seniors",
     type: "website",
   },
   twitter: {
@@ -27,7 +27,7 @@ export default function BMISeniorsPage() {
       <CalculatorSchema
         name="BMI Calculator for Seniors"
         description="BMI calculator for seniors aged 60+ using Singapore HPB standards."
-        url="https://bmicalculator.sg/bmi-calculator/seniors"
+        url="https://www.bmicalculatorsingapore.com/bmi-calculator/seniors"
         lastReviewed="2026-03-31"
         faqs={[
           { question: "What is a healthy BMI for seniors in Singapore?", answer: "For adults over 65, some guidelines suggest a slightly higher healthy BMI (up to 23–24) may be protective against frailty and malnutrition. Consult your doctor for personalised advice." },
@@ -36,9 +36,9 @@ export default function BMISeniorsPage() {
           { question: "Does BMI become less accurate with age?", answer: "Yes. Older adults tend to have less muscle and more body fat at the same BMI. Body composition assessment (waist circumference, muscle mass) gives a more complete picture." },
         ]}
         breadcrumbs={[
-          { name: "Home", url: "https://bmicalculator.sg" },
-          { name: "BMI Calculator", url: "https://bmicalculator.sg/bmi-calculator" },
-          { name: "BMI for Seniors", url: "https://bmicalculator.sg/bmi-calculator/seniors" },
+          { name: "Home", url: "https://www.bmicalculatorsingapore.com" },
+          { name: "BMI Calculator", url: "https://www.bmicalculatorsingapore.com/bmi-calculator" },
+          { name: "BMI for Seniors", url: "https://www.bmicalculatorsingapore.com/bmi-calculator/seniors" },
         ]}
         isMedical
       />

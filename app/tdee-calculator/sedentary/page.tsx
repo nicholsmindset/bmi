@@ -8,11 +8,11 @@ export const metadata: Metadata = {
   title: "TDEE Calculator for Sedentary Lifestyle — Singapore",
   description:
     "Calculate your TDEE if you have a sedentary lifestyle — office job, little to no exercise. Mifflin-St Jeor formula with 1.2× sedentary multiplier.",
-  alternates: { canonical: "https://bmicalculator.sg/tdee-calculator/sedentary" },
+  alternates: { canonical: "https://www.bmicalculatorsingapore.com/tdee-calculator/sedentary" },
   openGraph: {
     title: "TDEE Calculator for Sedentary Lifestyle — Singapore",
     description: "Calculate your TDEE if you have a sedentary lifestyle — office job, little to no exercise. Mifflin-St Jeor formula with 1.2× sedentary multiplier.",
-    url: "https://bmicalculator.sg/tdee-calculator/sedentary",
+    url: "https://www.bmicalculatorsingapore.com/tdee-calculator/sedentary",
     type: "website",
   },
   twitter: {
@@ -40,13 +40,13 @@ export default function TDEESedentaryPage() {
       <CalculatorSchema
         name="TDEE Calculator for Sedentary Lifestyle Singapore"
         description="Calculate your Total Daily Energy Expenditure with a sedentary lifestyle using the Mifflin-St Jeor formula and 1.2× activity multiplier."
-        url="https://bmicalculator.sg/tdee-calculator/sedentary"
+        url="https://www.bmicalculatorsingapore.com/tdee-calculator/sedentary"
         lastReviewed="2026-03-31"
         faqs={FAQS}
         breadcrumbs={[
-          { name: "Home", url: "https://bmicalculator.sg" },
-          { name: "TDEE Calculator", url: "https://bmicalculator.sg/tdee-calculator" },
-          { name: "Sedentary", url: "https://bmicalculator.sg/tdee-calculator/sedentary" },
+          { name: "Home", url: "https://www.bmicalculatorsingapore.com" },
+          { name: "TDEE Calculator", url: "https://www.bmicalculatorsingapore.com/tdee-calculator" },
+          { name: "Sedentary", url: "https://www.bmicalculatorsingapore.com/tdee-calculator/sedentary" },
         ]}
       />
 

@@ -9,12 +9,12 @@ export const metadata: Metadata = {
   title: "Water Intake Calculator Singapore — Daily Hydration Target",
   description:
     "Calculate how much water to drink per day adjusted for Singapore's tropical climate, body weight, and activity level.",
-  alternates: { canonical: "https://bmicalculator.sg/water-intake-calculator" },
+  alternates: { canonical: "https://www.bmicalculatorsingapore.com/water-intake-calculator" },
   openGraph: {
     title: "Water Intake Calculator Singapore — Daily Hydration Target",
     description:
       "Calculate how much water to drink per day adjusted for Singapore's tropical climate, body weight, and activity level.",
-    url: "https://bmicalculator.sg/water-intake-calculator",
+    url: "https://www.bmicalculatorsingapore.com/water-intake-calculator",
     type: "website",
   },
   twitter: {
@@ -80,12 +80,12 @@ export default function WaterIntakeCalculatorPage() {
       <CalculatorSchema
         name="Water Intake Calculator Singapore"
         description="Calculate how much water to drink per day adjusted for Singapore's tropical climate, body weight, and activity level."
-        url="https://bmicalculator.sg/water-intake-calculator"
+        url="https://www.bmicalculatorsingapore.com/water-intake-calculator"
         lastReviewed="2026-03-31"
         faqs={FAQS}
         breadcrumbs={[
-          { name: "Home", url: "https://bmicalculator.sg" },
-          { name: "Water Intake Calculator", url: "https://bmicalculator.sg/water-intake-calculator" },
+          { name: "Home", url: "https://www.bmicalculatorsingapore.com" },
+          { name: "Water Intake Calculator", url: "https://www.bmicalculatorsingapore.com/water-intake-calculator" },
         ]}
       />
 

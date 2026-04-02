@@ -8,11 +8,11 @@ export const metadata: Metadata = {
   title: "Bulking Macro Calculator — Protein, Carbs & Fat for Muscle Gain",
   description:
     "Calculate macros for a clean bulk. 30% protein / 50% carbs / 20% fat to fuel muscle growth without excessive fat gain.",
-  alternates: { canonical: "https://bmicalculator.sg/macro-calculator/bulking" },
+  alternates: { canonical: "https://www.bmicalculatorsingapore.com/macro-calculator/bulking" },
   openGraph: {
     title: "Bulking Macro Calculator — Protein, Carbs & Fat for Muscle Gain",
     description: "Calculate macros for a clean bulk. 30% protein / 50% carbs / 20% fat to fuel muscle growth without excessive fat gain.",
-    url: "https://bmicalculator.sg/macro-calculator/bulking",
+    url: "https://www.bmicalculatorsingapore.com/macro-calculator/bulking",
     type: "website",
   },
   twitter: {
@@ -40,13 +40,13 @@ export default function MacroBulkingPage() {
       <CalculatorSchema
         name="Bulking Macro Calculator"
         description="Calculate macros for a clean bulk using a 30% protein / 50% carbs / 20% fat split to fuel muscle growth without excessive fat gain."
-        url="https://bmicalculator.sg/macro-calculator/bulking"
+        url="https://www.bmicalculatorsingapore.com/macro-calculator/bulking"
         lastReviewed="2026-03-31"
         faqs={FAQS}
         breadcrumbs={[
-          { name: "Home", url: "https://bmicalculator.sg" },
-          { name: "Macro Calculator", url: "https://bmicalculator.sg/macro-calculator" },
-          { name: "Bulking", url: "https://bmicalculator.sg/macro-calculator/bulking" },
+          { name: "Home", url: "https://www.bmicalculatorsingapore.com" },
+          { name: "Macro Calculator", url: "https://www.bmicalculatorsingapore.com/macro-calculator" },
+          { name: "Bulking", url: "https://www.bmicalculatorsingapore.com/macro-calculator/bulking" },
         ]}
       />
 

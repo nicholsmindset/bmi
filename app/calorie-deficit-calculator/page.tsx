@@ -10,12 +10,12 @@ export const metadata: Metadata = {
   title: "Calorie Deficit Calculator Singapore — Safe Weight Loss Calories",
   description:
     "Calculate your daily calorie deficit to lose weight safely. Singapore HPB-aligned. Enter weight, height, and goal for your personalised calorie target and timeline.",
-  alternates: { canonical: "https://bmicalculator.sg/calorie-deficit-calculator" },
+  alternates: { canonical: "https://www.bmicalculatorsingapore.com/calorie-deficit-calculator" },
   openGraph: {
     title: "Calorie Deficit Calculator Singapore — Safe Weight Loss Calories",
     description:
       "Calculate your daily calorie deficit to lose weight safely. Singapore HPB-aligned. Enter weight, height, and goal for your personalised calorie target and timeline.",
-    url: "https://bmicalculator.sg/calorie-deficit-calculator",
+    url: "https://www.bmicalculatorsingapore.com/calorie-deficit-calculator",
     type: "website",
   },
   twitter: {
@@ -62,7 +62,7 @@ export default function CalorieDeficitPage() {
       <CalculatorSchema
         name="Calorie Deficit Calculator Singapore"
         description="Calculate your daily calorie deficit to lose weight safely using Singapore HPB guidelines."
-        url="https://bmicalculator.sg/calorie-deficit-calculator"
+        url="https://www.bmicalculatorsingapore.com/calorie-deficit-calculator"
         lastReviewed="2026-03-31"
         faqs={[
           {
@@ -87,8 +87,8 @@ export default function CalorieDeficitPage() {
           },
         ]}
         breadcrumbs={[
-          { name: "Home", url: "https://bmicalculator.sg" },
-          { name: "Calorie Deficit Calculator", url: "https://bmicalculator.sg/calorie-deficit-calculator" },
+          { name: "Home", url: "https://www.bmicalculatorsingapore.com" },
+          { name: "Calorie Deficit Calculator", url: "https://www.bmicalculatorsingapore.com/calorie-deficit-calculator" },
         ]}
         isMedical
       />

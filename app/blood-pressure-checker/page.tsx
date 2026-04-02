@@ -9,12 +9,12 @@ export const metadata: Metadata = {
   title: "Blood Pressure Checker Singapore — BP Categories & Chart",
   description:
     "Check your blood pressure reading against Singapore MOH and JNC8 categories. Normal, elevated, Stage 1, and Stage 2 hypertension ranges explained.",
-  alternates: { canonical: "https://bmicalculator.sg/blood-pressure-checker" },
+  alternates: { canonical: "https://www.bmicalculatorsingapore.com/blood-pressure-checker" },
   openGraph: {
     title: "Blood Pressure Checker Singapore — BP Categories & Chart",
     description:
       "Check your blood pressure reading against Singapore MOH and JNC8 categories. Normal, elevated, Stage 1, and Stage 2 hypertension ranges explained.",
-    url: "https://bmicalculator.sg/blood-pressure-checker",
+    url: "https://www.bmicalculatorsingapore.com/blood-pressure-checker",
     type: "website",
   },
   twitter: {
@@ -30,7 +30,7 @@ export default function BloodPressurePage() {
       <CalculatorSchema
         name="Blood Pressure Checker Singapore"
         description="Check your blood pressure reading against Singapore MOH and JNC8 hypertension categories."
-        url="https://bmicalculator.sg/blood-pressure-checker"
+        url="https://www.bmicalculatorsingapore.com/blood-pressure-checker"
         lastReviewed="2026-03-31"
         faqs={[
           {
@@ -55,8 +55,8 @@ export default function BloodPressurePage() {
           },
         ]}
         breadcrumbs={[
-          { name: "Home", url: "https://bmicalculator.sg" },
-          { name: "Blood Pressure Checker", url: "https://bmicalculator.sg/blood-pressure-checker" },
+          { name: "Home", url: "https://www.bmicalculatorsingapore.com" },
+          { name: "Blood Pressure Checker", url: "https://www.bmicalculatorsingapore.com/blood-pressure-checker" },
         ]}
         isMedical
       />

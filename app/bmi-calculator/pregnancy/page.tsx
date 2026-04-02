@@ -8,11 +8,11 @@ export const metadata: Metadata = {
   title: "BMI Calculator for Pregnancy Singapore — Pre-Pregnancy BMI",
   description:
     "Calculate your pre-pregnancy BMI using Singapore HPB standards. Pre-pregnancy BMI determines healthy gestational weight gain targets recommended by your doctor.",
-  alternates: { canonical: "https://bmicalculator.sg/bmi-calculator/pregnancy" },
+  alternates: { canonical: "https://www.bmicalculatorsingapore.com/bmi-calculator/pregnancy" },
   openGraph: {
     title: "BMI Calculator for Pregnancy Singapore — Pre-Pregnancy BMI",
     description: "Calculate your pre-pregnancy BMI using Singapore HPB standards. Pre-pregnancy BMI determines healthy gestational weight gain targets recommended by your doctor.",
-    url: "https://bmicalculator.sg/bmi-calculator/pregnancy",
+    url: "https://www.bmicalculatorsingapore.com/bmi-calculator/pregnancy",
     type: "website",
   },
   twitter: {
@@ -27,7 +27,7 @@ export default function BMIPregnancyPage() {
       <CalculatorSchema
         name="BMI Calculator for Pregnancy"
         description="Pre-pregnancy BMI calculator to understand healthy weight gain targets during pregnancy."
-        url="https://bmicalculator.sg/bmi-calculator/pregnancy"
+        url="https://www.bmicalculatorsingapore.com/bmi-calculator/pregnancy"
         lastReviewed="2026-03-31"
         faqs={[
           { question: "Can I use this BMI calculator during pregnancy?", answer: "No. BMI is not used to assess health during pregnancy as weight changes are expected. Use your pre-pregnancy weight to calculate your pre-pregnancy BMI." },
@@ -36,9 +36,9 @@ export default function BMIPregnancyPage() {
           { question: "Is BMI used to monitor weight during pregnancy?", answer: "No. During pregnancy, your obstetrician monitors gestational weight gain rather than BMI. Enter your pre-pregnancy weight to use this calculator meaningfully." },
         ]}
         breadcrumbs={[
-          { name: "Home", url: "https://bmicalculator.sg" },
-          { name: "BMI Calculator", url: "https://bmicalculator.sg/bmi-calculator" },
-          { name: "BMI for Pregnancy", url: "https://bmicalculator.sg/bmi-calculator/pregnancy" },
+          { name: "Home", url: "https://www.bmicalculatorsingapore.com" },
+          { name: "BMI Calculator", url: "https://www.bmicalculatorsingapore.com/bmi-calculator" },
+          { name: "BMI for Pregnancy", url: "https://www.bmicalculatorsingapore.com/bmi-calculator/pregnancy" },
         ]}
         isMedical
       />

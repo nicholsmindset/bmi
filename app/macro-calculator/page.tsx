@@ -9,12 +9,12 @@ export const metadata: Metadata = {
   title: "Macro Calculator Singapore — Protein, Carbs & Fat Targets",
   description:
     "Calculate your daily macronutrient targets. Choose cutting, bulking, maintenance, or keto and get your personalised protein, carb, and fat goals in grams.",
-  alternates: { canonical: "https://bmicalculator.sg/macro-calculator" },
+  alternates: { canonical: "https://www.bmicalculatorsingapore.com/macro-calculator" },
   openGraph: {
     title: "Macro Calculator Singapore — Protein, Carbs & Fat Targets",
     description:
       "Calculate your daily macronutrient targets. Choose cutting, bulking, maintenance, or keto and get your personalised protein, carb, and fat goals in grams.",
-    url: "https://bmicalculator.sg/macro-calculator",
+    url: "https://www.bmicalculatorsingapore.com/macro-calculator",
     type: "website",
   },
   twitter: {
@@ -88,12 +88,12 @@ export default function MacroCalculatorPage() {
       <CalculatorSchema
         name="Macro Calculator Singapore"
         description="Calculate your daily protein, carbohydrate, and fat targets based on your calorie goal and objective."
-        url="https://bmicalculator.sg/macro-calculator"
+        url="https://www.bmicalculatorsingapore.com/macro-calculator"
         lastReviewed="2026-03-31"
         faqs={FAQS}
         breadcrumbs={[
-          { name: "Home", url: "https://bmicalculator.sg" },
-          { name: "Macro Calculator", url: "https://bmicalculator.sg/macro-calculator" },
+          { name: "Home", url: "https://www.bmicalculatorsingapore.com" },
+          { name: "Macro Calculator", url: "https://www.bmicalculatorsingapore.com/macro-calculator" },
         ]}
       />
 

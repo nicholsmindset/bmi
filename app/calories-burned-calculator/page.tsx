@@ -9,12 +9,12 @@ export const metadata: Metadata = {
   title: "Calories Burned Calculator Singapore — Walking, Running, Cycling, Swimming",
   description:
     "Calculate calories burned during exercise using MET values and your body weight. Walking, running, cycling, swimming, badminton and more Singapore-friendly activities. Instant results.",
-  alternates: { canonical: "https://bmicalculator.sg/calories-burned-calculator" },
+  alternates: { canonical: "https://www.bmicalculatorsingapore.com/calories-burned-calculator" },
   openGraph: {
     title: "Calories Burned Calculator Singapore — Walking, Running, Cycling, Swimming",
     description:
       "Calculate calories burned during exercise using MET values and your body weight. Walking, running, cycling, swimming, badminton and more Singapore-friendly activities. Instant results.",
-    url: "https://bmicalculator.sg/calories-burned-calculator",
+    url: "https://www.bmicalculatorsingapore.com/calories-burned-calculator",
     type: "website",
   },
   twitter: {
@@ -107,14 +107,14 @@ export default function CaloriesBurnedCalculatorPage() {
       <CalculatorSchema
         name="Calories Burned Calculator Singapore"
         description="Calculate calories burned during exercise using MET values and your body weight."
-        url="https://bmicalculator.sg/calories-burned-calculator"
+        url="https://www.bmicalculatorsingapore.com/calories-burned-calculator"
         lastReviewed="2026-03-31"
         faqs={FAQS}
         breadcrumbs={[
-          { name: "Home", url: "https://bmicalculator.sg" },
+          { name: "Home", url: "https://www.bmicalculatorsingapore.com" },
           {
             name: "Calories Burned Calculator",
-            url: "https://bmicalculator.sg/calories-burned-calculator",
+            url: "https://www.bmicalculatorsingapore.com/calories-burned-calculator",
           },
         ]}
       />

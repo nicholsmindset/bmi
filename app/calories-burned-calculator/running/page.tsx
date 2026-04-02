@@ -9,11 +9,11 @@ export const metadata: Metadata = {
   title: "Calories Burned Running Calculator Singapore",
   description:
     "Calculate calories burned running based on your weight, pace, and duration. MET-based formula used by exercise scientists. East Coast Park, MacRitchie, and stadium running estimates.",
-  alternates: { canonical: "https://bmicalculator.sg/calories-burned-calculator/running" },
+  alternates: { canonical: "https://www.bmicalculatorsingapore.com/calories-burned-calculator/running" },
   openGraph: {
     title: "Calories Burned Running Calculator Singapore",
     description: "Calculate calories burned running based on your weight, pace, and duration. MET-based formula used by exercise scientists. East Coast Park, MacRitchie, and stadium running estimates.",
-    url: "https://bmicalculator.sg/calories-burned-calculator/running",
+    url: "https://www.bmicalculatorsingapore.com/calories-burned-calculator/running",
     type: "website",
   },
   twitter: {
@@ -68,15 +68,15 @@ export default function RunningCaloriesPage() {
       <CalculatorSchema
         name="Calories Burned Running Calculator Singapore"
         description="Calculate calories burned running based on weight, pace, and duration."
-        url="https://bmicalculator.sg/calories-burned-calculator/running"
+        url="https://www.bmicalculatorsingapore.com/calories-burned-calculator/running"
         lastReviewed="2026-03-31"
         faqs={FAQS}
         breadcrumbs={[
-          { name: "Home", url: "https://bmicalculator.sg" },
-          { name: "Calories Burned", url: "https://bmicalculator.sg/calories-burned-calculator" },
+          { name: "Home", url: "https://www.bmicalculatorsingapore.com" },
+          { name: "Calories Burned", url: "https://www.bmicalculatorsingapore.com/calories-burned-calculator" },
           {
             name: "Running",
-            url: "https://bmicalculator.sg/calories-burned-calculator/running",
+            url: "https://www.bmicalculatorsingapore.com/calories-burned-calculator/running",
           },
         ]}
       />

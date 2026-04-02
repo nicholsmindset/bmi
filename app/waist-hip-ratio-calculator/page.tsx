@@ -8,12 +8,12 @@ export const metadata: Metadata = {
   title: "Waist-to-Hip Ratio Calculator — Cardiovascular Risk Singapore",
   description:
     "Calculate your waist-to-hip ratio using Singapore HPB Asian thresholds. WHR identifies central obesity risk that BMI alone can miss.",
-  alternates: { canonical: "https://bmicalculator.sg/waist-hip-ratio-calculator" },
+  alternates: { canonical: "https://www.bmicalculatorsingapore.com/waist-hip-ratio-calculator" },
   openGraph: {
     title: "Waist-to-Hip Ratio Calculator — Cardiovascular Risk Singapore",
     description:
       "Calculate your waist-to-hip ratio using Singapore HPB Asian thresholds. WHR identifies central obesity risk that BMI alone can miss.",
-    url: "https://bmicalculator.sg/waist-hip-ratio-calculator",
+    url: "https://www.bmicalculatorsingapore.com/waist-hip-ratio-calculator",
     type: "website",
   },
   twitter: {
@@ -29,7 +29,7 @@ export default function WHRPage() {
       <CalculatorSchema
         name="Waist-to-Hip Ratio Calculator Singapore"
         description="Calculate waist-to-hip ratio using Singapore HPB and WHO Asia-Pacific cardiovascular risk thresholds."
-        url="https://bmicalculator.sg/waist-hip-ratio-calculator"
+        url="https://www.bmicalculatorsingapore.com/waist-hip-ratio-calculator"
         lastReviewed="2026-03-31"
         faqs={[
           {
@@ -54,8 +54,8 @@ export default function WHRPage() {
           },
         ]}
         breadcrumbs={[
-          { name: "Home", url: "https://bmicalculator.sg" },
-          { name: "Waist-Hip Ratio Calculator", url: "https://bmicalculator.sg/waist-hip-ratio-calculator" },
+          { name: "Home", url: "https://www.bmicalculatorsingapore.com" },
+          { name: "Waist-Hip Ratio Calculator", url: "https://www.bmicalculatorsingapore.com/waist-hip-ratio-calculator" },
         ]}
       />
 

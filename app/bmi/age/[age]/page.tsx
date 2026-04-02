@@ -39,7 +39,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   return {
     title: `BMI Calculator for Age ${a} — Healthy Range Singapore`,
     description: `What is a healthy BMI at age ${a} in Singapore? Calculate your BMI using HPB Asian standards and see what the numbers mean for your age group.`,
-    alternates: { canonical: `https://bmicalculator.sg/bmi/age/${age}` },
+    alternates: { canonical: `https://www.bmicalculatorsingapore.com/bmi/age/${age}` },
   };
 }
 
@@ -58,7 +58,7 @@ export default async function BMIByAgePage({ params }: Props) {
       <CalculatorSchema
         name={`BMI Calculator for Age ${a}`}
         description={`Calculate your BMI at age ${a} using Singapore HPB Asian standards.`}
-        url={`https://bmicalculator.sg/bmi/age/${age}`}
+        url={`https://www.bmicalculatorsingapore.com/bmi/age/${age}`}
         lastReviewed="2026-03-31"
         faqs={[
           {
@@ -79,9 +79,9 @@ export default async function BMIByAgePage({ params }: Props) {
           },
         ]}
         breadcrumbs={[
-          { name: "Home", url: "https://bmicalculator.sg" },
-          { name: "BMI Calculator", url: "https://bmicalculator.sg/bmi-calculator" },
-          { name: `BMI for Age ${a}`, url: `https://bmicalculator.sg/bmi/age/${age}` },
+          { name: "Home", url: "https://www.bmicalculatorsingapore.com" },
+          { name: "BMI Calculator", url: "https://www.bmicalculatorsingapore.com/bmi-calculator" },
+          { name: `BMI for Age ${a}`, url: `https://www.bmicalculatorsingapore.com/bmi/age/${age}` },
         ]}
         isMedical
       />

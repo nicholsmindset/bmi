@@ -8,11 +8,11 @@ export const metadata: Metadata = {
   title: "BMI Calculator for Teenagers Singapore — Age 13 to 18",
   description:
     "BMI calculator for teenagers in Singapore. Understand what your BMI means as a teen — adult BMI categories only apply from age 18. Consult your doctor for personalised guidance.",
-  alternates: { canonical: "https://bmicalculator.sg/bmi-calculator/teens" },
+  alternates: { canonical: "https://www.bmicalculatorsingapore.com/bmi-calculator/teens" },
   openGraph: {
     title: "BMI Calculator for Teenagers Singapore — Age 13 to 18",
     description: "BMI calculator for teenagers in Singapore. Understand what your BMI means as a teen — adult BMI categories only apply from age 18. Consult your doctor for personalised guidance.",
-    url: "https://bmicalculator.sg/bmi-calculator/teens",
+    url: "https://www.bmicalculatorsingapore.com/bmi-calculator/teens",
     type: "website",
   },
   twitter: {
@@ -27,7 +27,7 @@ export default function BMITeensPage() {
       <CalculatorSchema
         name="BMI Calculator for Teenagers"
         description="BMI calculator for teenagers with guidance on age-specific interpretation."
-        url="https://bmicalculator.sg/bmi-calculator/teens"
+        url="https://www.bmicalculatorsingapore.com/bmi-calculator/teens"
         lastReviewed="2026-03-31"
         faqs={[
           { question: "What is a healthy BMI for teenagers?", answer: "For teenagers, BMI is interpreted using BMI-for-age percentile charts, not adult cutoffs. A healthy range is typically between the 5th and 85th percentile for age and sex." },
@@ -36,9 +36,9 @@ export default function BMITeensPage() {
           { question: "Should teenagers try to lose weight based on BMI?", answer: "Teenagers should not attempt weight loss without medical supervision. BMI in teens is still developing. Consult a doctor or dietitian before any dietary changes." },
         ]}
         breadcrumbs={[
-          { name: "Home", url: "https://bmicalculator.sg" },
-          { name: "BMI Calculator", url: "https://bmicalculator.sg/bmi-calculator" },
-          { name: "BMI for Teenagers", url: "https://bmicalculator.sg/bmi-calculator/teens" },
+          { name: "Home", url: "https://www.bmicalculatorsingapore.com" },
+          { name: "BMI Calculator", url: "https://www.bmicalculatorsingapore.com/bmi-calculator" },
+          { name: "BMI for Teenagers", url: "https://www.bmicalculatorsingapore.com/bmi-calculator/teens" },
         ]}
         isMedical
       />

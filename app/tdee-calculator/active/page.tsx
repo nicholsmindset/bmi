@@ -8,11 +8,11 @@ export const metadata: Metadata = {
   title: "TDEE Calculator for Active Lifestyle — Singapore",
   description:
     "Calculate your TDEE if you exercise 6–7 days per week. Uses 1.725× active multiplier. Mifflin-St Jeor formula.",
-  alternates: { canonical: "https://bmicalculator.sg/tdee-calculator/active" },
+  alternates: { canonical: "https://www.bmicalculatorsingapore.com/tdee-calculator/active" },
   openGraph: {
     title: "TDEE Calculator for Active Lifestyle — Singapore",
     description: "Calculate your TDEE if you exercise 6–7 days per week. Uses 1.725× active multiplier. Mifflin-St Jeor formula.",
-    url: "https://bmicalculator.sg/tdee-calculator/active",
+    url: "https://www.bmicalculatorsingapore.com/tdee-calculator/active",
     type: "website",
   },
   twitter: {
@@ -40,13 +40,13 @@ export default function TDEEActivePage() {
       <CalculatorSchema
         name="TDEE Calculator for Active Lifestyle Singapore"
         description="Calculate Total Daily Energy Expenditure for an active lifestyle using the Mifflin-St Jeor formula and 1.725× activity multiplier."
-        url="https://bmicalculator.sg/tdee-calculator/active"
+        url="https://www.bmicalculatorsingapore.com/tdee-calculator/active"
         lastReviewed="2026-03-31"
         faqs={FAQS}
         breadcrumbs={[
-          { name: "Home", url: "https://bmicalculator.sg" },
-          { name: "TDEE Calculator", url: "https://bmicalculator.sg/tdee-calculator" },
-          { name: "Active", url: "https://bmicalculator.sg/tdee-calculator/active" },
+          { name: "Home", url: "https://www.bmicalculatorsingapore.com" },
+          { name: "TDEE Calculator", url: "https://www.bmicalculatorsingapore.com/tdee-calculator" },
+          { name: "Active", url: "https://www.bmicalculatorsingapore.com/tdee-calculator/active" },
         ]}
       />
 

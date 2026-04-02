@@ -8,11 +8,11 @@ export const metadata: Metadata = {
   title: "Calorie Calculator Singapore — HPB Dietary Guidelines",
   description:
     "Calculate daily calories following Singapore HPB dietary guidelines. Personalised for Singaporeans — hawker food calorie guide, My Healthy Plate, and age-specific targets.",
-  alternates: { canonical: "https://bmicalculator.sg/calorie-calculator/singapore" },
+  alternates: { canonical: "https://www.bmicalculatorsingapore.com/calorie-calculator/singapore" },
   openGraph: {
     title: "Calorie Calculator Singapore — HPB Dietary Guidelines",
     description: "Calculate daily calories following Singapore HPB dietary guidelines. Personalised for Singaporeans — hawker food calorie guide, My Healthy Plate, and age-specific targets.",
-    url: "https://bmicalculator.sg/calorie-calculator/singapore",
+    url: "https://www.bmicalculatorsingapore.com/calorie-calculator/singapore",
     type: "website",
   },
   twitter: {
@@ -70,13 +70,13 @@ export default function CalorieCalculatorSingaporePage() {
       <CalculatorSchema
         name="Calorie Calculator Singapore"
         description="Calculate daily calorie needs following Singapore HPB dietary guidelines, with a hawker food calorie guide and My Healthy Plate context."
-        url="https://bmicalculator.sg/calorie-calculator/singapore"
+        url="https://www.bmicalculatorsingapore.com/calorie-calculator/singapore"
         lastReviewed="2026-03-31"
         faqs={FAQS}
         breadcrumbs={[
-          { name: "Home", url: "https://bmicalculator.sg" },
-          { name: "Calorie Calculator", url: "https://bmicalculator.sg/calorie-calculator" },
-          { name: "Singapore", url: "https://bmicalculator.sg/calorie-calculator/singapore" },
+          { name: "Home", url: "https://www.bmicalculatorsingapore.com" },
+          { name: "Calorie Calculator", url: "https://www.bmicalculatorsingapore.com/calorie-calculator" },
+          { name: "Singapore", url: "https://www.bmicalculatorsingapore.com/calorie-calculator/singapore" },
         ]}
       />
 

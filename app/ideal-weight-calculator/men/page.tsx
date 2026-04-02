@@ -8,11 +8,11 @@ export const metadata: Metadata = {
   title: "Ideal Weight for Men Singapore — HPB Healthy Weight Range",
   description:
     "Calculate the ideal weight range for men using Singapore HPB Asian BMI standard (18.5–22.9) and Hamwi formula. HPB healthy weight for your height.",
-  alternates: { canonical: "https://bmicalculator.sg/ideal-weight-calculator/men" },
+  alternates: { canonical: "https://www.bmicalculatorsingapore.com/ideal-weight-calculator/men" },
   openGraph: {
     title: "Ideal Weight for Men Singapore — HPB Healthy Weight Range",
     description: "Calculate the ideal weight range for men using Singapore HPB Asian BMI standard (18.5–22.9) and Hamwi formula. HPB healthy weight for your height.",
-    url: "https://bmicalculator.sg/ideal-weight-calculator/men",
+    url: "https://www.bmicalculatorsingapore.com/ideal-weight-calculator/men",
     type: "website",
   },
   twitter: {
@@ -40,13 +40,13 @@ export default function IdealWeightMenPage() {
       <CalculatorSchema
         name="Ideal Weight for Men Singapore"
         description="Calculate the ideal weight range for men using Singapore HPB Asian BMI standard (18.5–22.9) and the Hamwi formula."
-        url="https://bmicalculator.sg/ideal-weight-calculator/men"
+        url="https://www.bmicalculatorsingapore.com/ideal-weight-calculator/men"
         lastReviewed="2026-03-31"
         faqs={FAQS}
         breadcrumbs={[
-          { name: "Home", url: "https://bmicalculator.sg" },
-          { name: "Ideal Weight Calculator", url: "https://bmicalculator.sg/ideal-weight-calculator" },
-          { name: "Men", url: "https://bmicalculator.sg/ideal-weight-calculator/men" },
+          { name: "Home", url: "https://www.bmicalculatorsingapore.com" },
+          { name: "Ideal Weight Calculator", url: "https://www.bmicalculatorsingapore.com/ideal-weight-calculator" },
+          { name: "Men", url: "https://www.bmicalculatorsingapore.com/ideal-weight-calculator/men" },
         ]}
       />
 

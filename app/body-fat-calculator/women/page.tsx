@@ -8,11 +8,11 @@ export const metadata: Metadata = {
   title: "Body Fat Calculator for Women — US Navy Method Singapore",
   description:
     "Calculate body fat % for women using the US Navy circumference method. Waist, neck, and hip measurements. ACE categories for women.",
-  alternates: { canonical: "https://bmicalculator.sg/body-fat-calculator/women" },
+  alternates: { canonical: "https://www.bmicalculatorsingapore.com/body-fat-calculator/women" },
   openGraph: {
     title: "Body Fat Calculator for Women — US Navy Method Singapore",
     description: "Calculate body fat % for women using the US Navy circumference method. Waist, neck, and hip measurements. ACE categories for women.",
-    url: "https://bmicalculator.sg/body-fat-calculator/women",
+    url: "https://www.bmicalculatorsingapore.com/body-fat-calculator/women",
     type: "website",
   },
   twitter: {
@@ -48,13 +48,13 @@ export default function BodyFatWomenPage() {
       <CalculatorSchema
         name="Body Fat Calculator for Women Singapore"
         description="Calculate body fat percentage for women using the US Navy circumference method with ACE category assessment."
-        url="https://bmicalculator.sg/body-fat-calculator/women"
+        url="https://www.bmicalculatorsingapore.com/body-fat-calculator/women"
         lastReviewed="2026-03-31"
         faqs={FAQS}
         breadcrumbs={[
-          { name: "Home", url: "https://bmicalculator.sg" },
-          { name: "Body Fat Calculator", url: "https://bmicalculator.sg/body-fat-calculator" },
-          { name: "Women", url: "https://bmicalculator.sg/body-fat-calculator/women" },
+          { name: "Home", url: "https://www.bmicalculatorsingapore.com" },
+          { name: "Body Fat Calculator", url: "https://www.bmicalculatorsingapore.com/body-fat-calculator" },
+          { name: "Women", url: "https://www.bmicalculatorsingapore.com/body-fat-calculator/women" },
         ]}
       />
 

@@ -7,12 +7,12 @@ export const metadata: Metadata = {
   title: "BMI Chart Singapore — HPB Asian & WHO BMI Ranges",
   description:
     "Complete BMI chart for Singapore using HPB Asian standards and WHO global categories. BMI tables for men and women by height from 155cm to 180cm. Understand what your BMI means.",
-  alternates: { canonical: "https://bmicalculator.sg/bmi-chart" },
+  alternates: { canonical: "https://www.bmicalculatorsingapore.com/bmi-chart" },
   openGraph: {
     title: "BMI Chart Singapore — HPB Asian & WHO BMI Ranges",
     description:
       "Complete BMI chart for Singapore using HPB Asian standards and WHO global categories. BMI tables for men and women by height from 155cm to 180cm. Understand what your BMI means.",
-    url: "https://bmicalculator.sg/bmi-chart",
+    url: "https://www.bmicalculatorsingapore.com/bmi-chart",
     type: "website",
   },
   twitter: {
@@ -75,13 +75,13 @@ export default function BMIChartPage() {
       <CalculatorSchema
         name="BMI Chart Singapore"
         description="Complete BMI chart for Singapore using HPB Asian standards and WHO global categories."
-        url="https://bmicalculator.sg/bmi-chart"
+        url="https://www.bmicalculatorsingapore.com/bmi-chart"
         lastReviewed="2026-03-31"
         faqs={FAQS}
         isMedical={true}
         breadcrumbs={[
-          { name: "Home", url: "https://bmicalculator.sg" },
-          { name: "BMI Chart", url: "https://bmicalculator.sg/bmi-chart" },
+          { name: "Home", url: "https://www.bmicalculatorsingapore.com" },
+          { name: "BMI Chart", url: "https://www.bmicalculatorsingapore.com/bmi-chart" },
         ]}
       />
 

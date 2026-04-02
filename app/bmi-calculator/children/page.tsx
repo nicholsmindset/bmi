@@ -8,11 +8,11 @@ export const metadata: Metadata = {
   title: "BMI Calculator for Children Singapore — Age 2 to 18",
   description:
     "BMI calculator for children in Singapore. Note: adult BMI categories do not apply to children. Children's BMI must be interpreted using age- and sex-specific percentile charts.",
-  alternates: { canonical: "https://bmicalculator.sg/bmi-calculator/children" },
+  alternates: { canonical: "https://www.bmicalculatorsingapore.com/bmi-calculator/children" },
   openGraph: {
     title: "BMI Calculator for Children Singapore — Age 2 to 18",
     description: "BMI calculator for children in Singapore. Note: adult BMI categories do not apply to children. Children's BMI must be interpreted using age- and sex-specific percentile charts.",
-    url: "https://bmicalculator.sg/bmi-calculator/children",
+    url: "https://www.bmicalculatorsingapore.com/bmi-calculator/children",
     type: "website",
   },
   twitter: {
@@ -27,7 +27,7 @@ export default function BMIChildrenPage() {
       <CalculatorSchema
         name="BMI Calculator for Children"
         description="BMI calculator for children with important guidance on interpreting results using age-specific percentiles."
-        url="https://bmicalculator.sg/bmi-calculator/children"
+        url="https://www.bmicalculatorsingapore.com/bmi-calculator/children"
         lastReviewed="2026-03-31"
         faqs={[
           { question: "Can I use adult BMI categories for children?", answer: "No. Adult BMI categories (like ≥23 = overweight) do not apply to children. Children's BMI must be compared to age- and sex-specific percentile charts provided by MOH or HPB." },
@@ -36,9 +36,9 @@ export default function BMIChildrenPage() {
           { question: "Where can I get a Singapore children's BMI chart?", answer: "HPB and KKH Women's and Children's Hospital provide Singapore-specific growth charts for children. Your child's paediatrician can plot BMI against age-appropriate percentile curves." },
         ]}
         breadcrumbs={[
-          { name: "Home", url: "https://bmicalculator.sg" },
-          { name: "BMI Calculator", url: "https://bmicalculator.sg/bmi-calculator" },
-          { name: "BMI for Children", url: "https://bmicalculator.sg/bmi-calculator/children" },
+          { name: "Home", url: "https://www.bmicalculatorsingapore.com" },
+          { name: "BMI Calculator", url: "https://www.bmicalculatorsingapore.com/bmi-calculator" },
+          { name: "BMI for Children", url: "https://www.bmicalculatorsingapore.com/bmi-calculator/children" },
         ]}
         isMedical
       />

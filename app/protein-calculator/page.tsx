@@ -10,12 +10,12 @@ export const metadata: Metadata = {
   title: "Protein Calculator Singapore — Daily Protein Intake",
   description:
     "Calculate how much protein you need per day based on weight, goal, and activity. ISSN-aligned recommendations. Includes Singapore hawker food protein sources.",
-  alternates: { canonical: "https://bmicalculator.sg/protein-calculator" },
+  alternates: { canonical: "https://www.bmicalculatorsingapore.com/protein-calculator" },
   openGraph: {
     title: "Protein Calculator Singapore — Daily Protein Intake",
     description:
       "Calculate how much protein you need per day based on weight, goal, and activity. ISSN-aligned recommendations. Includes Singapore hawker food protein sources.",
-    url: "https://bmicalculator.sg/protein-calculator",
+    url: "https://www.bmicalculatorsingapore.com/protein-calculator",
     type: "website",
   },
   twitter: {
@@ -55,7 +55,7 @@ export default function ProteinCalculatorPage() {
       <CalculatorSchema
         name="Protein Calculator Singapore"
         description="Calculate your daily protein intake based on weight, goal, and activity level using ISSN guidelines."
-        url="https://bmicalculator.sg/protein-calculator"
+        url="https://www.bmicalculatorsingapore.com/protein-calculator"
         lastReviewed="2026-03-31"
         faqs={[
           {
@@ -80,8 +80,8 @@ export default function ProteinCalculatorPage() {
           },
         ]}
         breadcrumbs={[
-          { name: "Home", url: "https://bmicalculator.sg" },
-          { name: "Protein Calculator", url: "https://bmicalculator.sg/protein-calculator" },
+          { name: "Home", url: "https://www.bmicalculatorsingapore.com" },
+          { name: "Protein Calculator", url: "https://www.bmicalculatorsingapore.com/protein-calculator" },
         ]}
       />
 

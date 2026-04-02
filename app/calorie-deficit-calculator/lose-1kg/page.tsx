@@ -8,11 +8,11 @@ export const metadata: Metadata = {
   title: "How to Lose 1kg Per Week — Calorie Deficit Calculator Singapore",
   description:
     "Calculate exactly how many calories to eat to lose 1kg per week safely. Singapore HPB-aligned calorie deficit guide with personalised daily targets.",
-  alternates: { canonical: "https://bmicalculator.sg/calorie-deficit-calculator/lose-1kg" },
+  alternates: { canonical: "https://www.bmicalculatorsingapore.com/calorie-deficit-calculator/lose-1kg" },
   openGraph: {
     title: "How to Lose 1kg Per Week — Calorie Deficit Calculator Singapore",
     description: "Calculate exactly how many calories to eat to lose 1kg per week safely. Singapore HPB-aligned calorie deficit guide with personalised daily targets.",
-    url: "https://bmicalculator.sg/calorie-deficit-calculator/lose-1kg",
+    url: "https://www.bmicalculatorsingapore.com/calorie-deficit-calculator/lose-1kg",
     type: "website",
   },
   twitter: {
@@ -27,7 +27,7 @@ export default function Lose1kgPage() {
       <CalculatorSchema
         name="Lose 1kg Per Week — Calorie Deficit Calculator"
         description="Calculate the calorie deficit needed to lose 1kg per week using Singapore HPB guidelines."
-        url="https://bmicalculator.sg/calorie-deficit-calculator/lose-1kg"
+        url="https://www.bmicalculatorsingapore.com/calorie-deficit-calculator/lose-1kg"
         lastReviewed="2026-03-31"
         faqs={[
           {
@@ -52,9 +52,9 @@ export default function Lose1kgPage() {
           },
         ]}
         breadcrumbs={[
-          { name: "Home", url: "https://bmicalculator.sg" },
-          { name: "Calorie Deficit Calculator", url: "https://bmicalculator.sg/calorie-deficit-calculator" },
-          { name: "Lose 1kg Per Week", url: "https://bmicalculator.sg/calorie-deficit-calculator/lose-1kg" },
+          { name: "Home", url: "https://www.bmicalculatorsingapore.com" },
+          { name: "Calorie Deficit Calculator", url: "https://www.bmicalculatorsingapore.com/calorie-deficit-calculator" },
+          { name: "Lose 1kg Per Week", url: "https://www.bmicalculatorsingapore.com/calorie-deficit-calculator/lose-1kg" },
         ]}
         isMedical
       />

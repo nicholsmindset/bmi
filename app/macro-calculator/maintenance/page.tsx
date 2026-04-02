@@ -8,11 +8,11 @@ export const metadata: Metadata = {
   title: "Maintenance Macro Calculator — Balanced Daily Macros",
   description:
     "Calculate your maintenance macros for body recomposition or sustainable nutrition. 30% protein / 40% carbs / 30% fat balanced split.",
-  alternates: { canonical: "https://bmicalculator.sg/macro-calculator/maintenance" },
+  alternates: { canonical: "https://www.bmicalculatorsingapore.com/macro-calculator/maintenance" },
   openGraph: {
     title: "Maintenance Macro Calculator — Balanced Daily Macros",
     description: "Calculate your maintenance macros for body recomposition or sustainable nutrition. 30% protein / 40% carbs / 30% fat balanced split.",
-    url: "https://bmicalculator.sg/macro-calculator/maintenance",
+    url: "https://www.bmicalculatorsingapore.com/macro-calculator/maintenance",
     type: "website",
   },
   twitter: {
@@ -40,13 +40,13 @@ export default function MacroMaintenancePage() {
       <CalculatorSchema
         name="Maintenance Macro Calculator"
         description="Calculate balanced daily macros at maintenance calories — 30% protein / 40% carbs / 30% fat for body recomposition and sustainable nutrition."
-        url="https://bmicalculator.sg/macro-calculator/maintenance"
+        url="https://www.bmicalculatorsingapore.com/macro-calculator/maintenance"
         lastReviewed="2026-03-31"
         faqs={FAQS}
         breadcrumbs={[
-          { name: "Home", url: "https://bmicalculator.sg" },
-          { name: "Macro Calculator", url: "https://bmicalculator.sg/macro-calculator" },
-          { name: "Maintenance", url: "https://bmicalculator.sg/macro-calculator/maintenance" },
+          { name: "Home", url: "https://www.bmicalculatorsingapore.com" },
+          { name: "Macro Calculator", url: "https://www.bmicalculatorsingapore.com/macro-calculator" },
+          { name: "Maintenance", url: "https://www.bmicalculatorsingapore.com/macro-calculator/maintenance" },
         ]}
       />
 

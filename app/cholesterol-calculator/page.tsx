@@ -10,12 +10,12 @@ export const metadata: Metadata = {
   title: "Cholesterol Ratio Calculator Singapore — TC/HDL Cardiovascular Risk",
   description:
     "Calculate your total cholesterol to HDL ratio and assess cardiovascular risk using Singapore HPB targets. Includes LDL calculation via Friedewald equation.",
-  alternates: { canonical: "https://bmicalculator.sg/cholesterol-calculator" },
+  alternates: { canonical: "https://www.bmicalculatorsingapore.com/cholesterol-calculator" },
   openGraph: {
     title: "Cholesterol Ratio Calculator Singapore — TC/HDL Cardiovascular Risk",
     description:
       "Calculate your total cholesterol to HDL ratio and assess cardiovascular risk using Singapore HPB targets. Includes LDL calculation via Friedewald equation.",
-    url: "https://bmicalculator.sg/cholesterol-calculator",
+    url: "https://www.bmicalculatorsingapore.com/cholesterol-calculator",
     type: "website",
   },
   twitter: {
@@ -89,12 +89,12 @@ export default function CholesterolCalculatorPage() {
       <CalculatorSchema
         name="Cholesterol Ratio Calculator Singapore"
         description="Calculate your TC/HDL ratio and assess cardiovascular risk using Singapore HPB targets."
-        url="https://bmicalculator.sg/cholesterol-calculator"
+        url="https://www.bmicalculatorsingapore.com/cholesterol-calculator"
         lastReviewed="2026-03-31"
         faqs={FAQS}
         breadcrumbs={[
-          { name: "Home", url: "https://bmicalculator.sg" },
-          { name: "Cholesterol Calculator", url: "https://bmicalculator.sg/cholesterol-calculator" },
+          { name: "Home", url: "https://www.bmicalculatorsingapore.com" },
+          { name: "Cholesterol Calculator", url: "https://www.bmicalculatorsingapore.com/cholesterol-calculator" },
         ]}
         isMedical
       />

@@ -57,7 +57,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   return {
     title: `Ideal Weight for ${cm}cm — Singapore HPB Healthy Range`,
     description: `What is the ideal weight for ${cm}cm? According to Singapore HPB, a healthy weight for ${cm}cm is ${hpb.min}–${hpb.max}kg. See male and female healthy ranges.`,
-    alternates: { canonical: `https://bmicalculator.sg/ideal-weight/${height}` },
+    alternates: { canonical: `https://www.bmicalculatorsingapore.com/ideal-weight/${height}` },
   };
 }
 
@@ -79,7 +79,7 @@ export default async function IdealWeightPage({ params }: Props) {
       <CalculatorSchema
         name={`Ideal Weight for ${cm}cm`}
         description={`Singapore HPB healthy weight range for ${cm}cm height.`}
-        url={`https://bmicalculator.sg/ideal-weight/${height}`}
+        url={`https://www.bmicalculatorsingapore.com/ideal-weight/${height}`}
         lastReviewed="2026-03-31"
         faqs={[
           {
@@ -100,9 +100,9 @@ export default async function IdealWeightPage({ params }: Props) {
           },
         ]}
         breadcrumbs={[
-          { name: "Home", url: "https://bmicalculator.sg" },
-          { name: "Ideal Weight Calculator", url: "https://bmicalculator.sg/ideal-weight-calculator" },
-          { name: `Ideal Weight for ${cm}cm`, url: `https://bmicalculator.sg/ideal-weight/${height}` },
+          { name: "Home", url: "https://www.bmicalculatorsingapore.com" },
+          { name: "Ideal Weight Calculator", url: "https://www.bmicalculatorsingapore.com/ideal-weight-calculator" },
+          { name: `Ideal Weight for ${cm}cm`, url: `https://www.bmicalculatorsingapore.com/ideal-weight/${height}` },
         ]}
         isMedical
       />

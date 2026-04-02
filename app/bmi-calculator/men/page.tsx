@@ -8,11 +8,11 @@ export const metadata: Metadata = {
   title: "BMI Calculator for Men Singapore — Healthy Range",
   description:
     "BMI calculator for men using Singapore HPB Asian standards. See what BMI means for male health, muscle mass considerations, and healthy weight ranges.",
-  alternates: { canonical: "https://bmicalculator.sg/bmi-calculator/men" },
+  alternates: { canonical: "https://www.bmicalculatorsingapore.com/bmi-calculator/men" },
   openGraph: {
     title: "BMI Calculator for Men Singapore — Healthy Range",
     description: "BMI calculator for men using Singapore HPB Asian standards. See what BMI means for male health, muscle mass considerations, and healthy weight ranges.",
-    url: "https://bmicalculator.sg/bmi-calculator/men",
+    url: "https://www.bmicalculatorsingapore.com/bmi-calculator/men",
     type: "website",
   },
   twitter: {
@@ -27,7 +27,7 @@ export default function BMIMenPage() {
       <CalculatorSchema
         name="BMI Calculator for Men"
         description="BMI calculator for men using Singapore HPB Asian standards."
-        url="https://bmicalculator.sg/bmi-calculator/men"
+        url="https://www.bmicalculatorsingapore.com/bmi-calculator/men"
         lastReviewed="2026-03-31"
         faqs={[
           { question: "What is a healthy BMI for men in Singapore?", answer: "A healthy BMI for men in Singapore is 18.5–22.9 under HPB Asian standards. Men with high muscle mass may have a higher BMI without excess fat." },
@@ -36,9 +36,9 @@ export default function BMIMenPage() {
           { question: "What is the average BMI for men in Singapore?", answer: "The average BMI for adult men in Singapore is approximately 23.6, placing the average Singaporean man in the overweight category by HPB Asian standards." },
         ]}
         breadcrumbs={[
-          { name: "Home", url: "https://bmicalculator.sg" },
-          { name: "BMI Calculator", url: "https://bmicalculator.sg/bmi-calculator" },
-          { name: "BMI for Men", url: "https://bmicalculator.sg/bmi-calculator/men" },
+          { name: "Home", url: "https://www.bmicalculatorsingapore.com" },
+          { name: "BMI Calculator", url: "https://www.bmicalculatorsingapore.com/bmi-calculator" },
+          { name: "BMI for Men", url: "https://www.bmicalculatorsingapore.com/bmi-calculator/men" },
         ]}
         isMedical
       />

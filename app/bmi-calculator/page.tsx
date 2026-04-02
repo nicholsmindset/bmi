@@ -11,13 +11,13 @@ export const metadata: Metadata = {
   description:
     "Free BMI calculator using Singapore's HPB Asian standards. Overweight starts at 23.0, not 25.0. Get instant results with healthy weight range for your height.",
   alternates: {
-    canonical: "https://bmicalculator.sg/bmi-calculator",
+    canonical: "https://www.bmicalculatorsingapore.com/bmi-calculator",
   },
   openGraph: {
     title: "BMI Calculator Singapore — Free HPB Asian Standard",
     description:
       "Free BMI calculator using Singapore's HPB Asian standards. Overweight starts at 23.0, not 25.0. Get instant results with healthy weight range for your height.",
-    url: "https://bmicalculator.sg/bmi-calculator",
+    url: "https://www.bmicalculatorsingapore.com/bmi-calculator",
     type: "website",
   },
   twitter: {
@@ -87,12 +87,12 @@ export default function BMICalculatorPage() {
       <CalculatorSchema
         name="BMI Calculator Singapore"
         description="Calculate your BMI using Singapore HPB Asian standards."
-        url="https://bmicalculator.sg/bmi-calculator"
+        url="https://www.bmicalculatorsingapore.com/bmi-calculator"
         lastReviewed="2026-03-31"
         faqs={FAQS}
         breadcrumbs={[
-          { name: "Home", url: "https://bmicalculator.sg" },
-          { name: "BMI Calculator", url: "https://bmicalculator.sg/bmi-calculator" },
+          { name: "Home", url: "https://www.bmicalculatorsingapore.com" },
+          { name: "BMI Calculator", url: "https://www.bmicalculatorsingapore.com/bmi-calculator" },
         ]}
         isMedical
       />

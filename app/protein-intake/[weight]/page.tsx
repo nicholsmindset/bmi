@@ -26,7 +26,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   return {
     title: `Protein Intake for ${kg}kg — How Much Protein Do You Need? | Singapore`,
     description: `How much protein should a ${kg}kg person eat per day? ISSN-backed protein targets for weight loss, maintenance, muscle gain, and athletic performance.`,
-    alternates: { canonical: `https://bmicalculator.sg/protein-intake/${weight}` },
+    alternates: { canonical: `https://www.bmicalculatorsingapore.com/protein-intake/${weight}` },
   };
 }
 
@@ -50,7 +50,7 @@ export default async function ProteinIntakePage({ params }: Props) {
       <CalculatorSchema
         name={`Protein Intake for ${kg}kg`}
         description={`ISSN protein targets for a ${kg}kg person for weight loss, maintenance, muscle gain, and athletic performance.`}
-        url={`https://bmicalculator.sg/protein-intake/${weight}`}
+        url={`https://www.bmicalculatorsingapore.com/protein-intake/${weight}`}
         lastReviewed="2026-03-31"
         faqs={[
           {
@@ -72,9 +72,9 @@ export default async function ProteinIntakePage({ params }: Props) {
           },
         ]}
         breadcrumbs={[
-          { name: "Home", url: "https://bmicalculator.sg" },
-          { name: "Protein Calculator", url: "https://bmicalculator.sg/protein-calculator" },
-          { name: `Protein Intake for ${kg}kg`, url: `https://bmicalculator.sg/protein-intake/${weight}` },
+          { name: "Home", url: "https://www.bmicalculatorsingapore.com" },
+          { name: "Protein Calculator", url: "https://www.bmicalculatorsingapore.com/protein-calculator" },
+          { name: `Protein Intake for ${kg}kg`, url: `https://www.bmicalculatorsingapore.com/protein-intake/${weight}` },
         ]}
       />
 

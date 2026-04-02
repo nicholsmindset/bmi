@@ -9,11 +9,11 @@ export const metadata: Metadata = {
   title: "Calories Burned Swimming Calculator Singapore",
   description:
     "Calculate calories burned swimming based on your weight, stroke intensity, and duration. Singapore public pool swimming calorie estimates. Free, instant results.",
-  alternates: { canonical: "https://bmicalculator.sg/calories-burned-calculator/swimming" },
+  alternates: { canonical: "https://www.bmicalculatorsingapore.com/calories-burned-calculator/swimming" },
   openGraph: {
     title: "Calories Burned Swimming Calculator Singapore",
     description: "Calculate calories burned swimming based on your weight, stroke intensity, and duration. Singapore public pool swimming calorie estimates. Free, instant results.",
-    url: "https://bmicalculator.sg/calories-burned-calculator/swimming",
+    url: "https://www.bmicalculatorsingapore.com/calories-burned-calculator/swimming",
     type: "website",
   },
   twitter: {
@@ -68,15 +68,15 @@ export default function SwimmingCaloriesPage() {
       <CalculatorSchema
         name="Calories Burned Swimming Calculator Singapore"
         description="Calculate calories burned swimming based on weight, stroke intensity, and duration."
-        url="https://bmicalculator.sg/calories-burned-calculator/swimming"
+        url="https://www.bmicalculatorsingapore.com/calories-burned-calculator/swimming"
         lastReviewed="2026-03-31"
         faqs={FAQS}
         breadcrumbs={[
-          { name: "Home", url: "https://bmicalculator.sg" },
-          { name: "Calories Burned", url: "https://bmicalculator.sg/calories-burned-calculator" },
+          { name: "Home", url: "https://www.bmicalculatorsingapore.com" },
+          { name: "Calories Burned", url: "https://www.bmicalculatorsingapore.com/calories-burned-calculator" },
           {
             name: "Swimming",
-            url: "https://bmicalculator.sg/calories-burned-calculator/swimming",
+            url: "https://www.bmicalculatorsingapore.com/calories-burned-calculator/swimming",
           },
         ]}
       />

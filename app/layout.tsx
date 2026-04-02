@@ -19,23 +19,23 @@ const publicSans = Public_Sans({
 });
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://bmicalculator.sg"),
+  metadataBase: new URL("https://www.bmicalculatorsingapore.com"),
   title: {
     default: "Singapore Health Calculators — BMI, Calories, Sleep & More",
-    template: "%s | bmicalculator.sg",
+    template: "%s | bmicalculatorsingapore.com",
   },
   description:
     "Free Singapore health calculators using HPB Asian standards. BMI, calorie deficit, TDEE, protein, sleep and 10 more tools. Instant results.",
   openGraph: {
     type: "website",
-    siteName: "bmicalculator.sg",
+    siteName: "bmicalculatorsingapore.com",
     locale: "en_SG",
     images: [
       {
         url: "/og-image.png",
         width: 1200,
         height: 630,
-        alt: "bmicalculator.sg — Singapore Health Calculators",
+        alt: "bmicalculatorsingapore.com — Singapore Health Calculators",
       },
     ],
   },
@@ -43,6 +43,9 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     site: "@bmicalcsg",
     images: ["/og-image.png"],
+  },
+  verification: {
+    google: "pqaMzsQutdAdWLv_nNVdN98R3vaIKfnEVJQ4C3W1oWE",
   },
   robots: {
     index: true,
@@ -165,7 +168,7 @@ export default function RootLayout({
                   className="text-sm font-bold mb-2"
                   style={{ fontFamily: "var(--font-manrope)", color: "var(--color-on-surface)" }}
                 >
-                  bmicalculator.sg
+                  bmicalculatorsingapore.com
                 </p>
                 <p className="text-xs leading-relaxed" style={{ color: "var(--color-neutral)" }}>
                   Singapore&apos;s free health calculator suite, built on HPB Asian standards.
@@ -243,7 +246,7 @@ export default function RootLayout({
               style={{ borderTop: "1px solid var(--color-outline-variant)" }}
             >
               <p className="text-xs" style={{ color: "var(--color-neutral)" }}>
-                © 2026 bmicalculator.sg — For informational purposes only. Not a substitute for medical advice.
+                © 2026 bmicalculatorsingapore.com — For informational purposes only. Not a substitute for medical advice.
               </p>
               <p className="text-xs" style={{ color: "var(--color-neutral)" }}>
                 This site earns commissions from affiliate links at no extra cost to you.

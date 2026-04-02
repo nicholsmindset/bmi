@@ -8,11 +8,11 @@ export const metadata: Metadata = {
   title: "Protein Calculator for Muscle Gain Singapore — ISSN Guidelines",
   description:
     "Calculate daily protein intake for muscle building. ISSN recommends 1.6–2.2g per kg bodyweight. Includes Singapore hawker food protein sources.",
-  alternates: { canonical: "https://bmicalculator.sg/protein-calculator/muscle-gain" },
+  alternates: { canonical: "https://www.bmicalculatorsingapore.com/protein-calculator/muscle-gain" },
   openGraph: {
     title: "Protein Calculator for Muscle Gain Singapore — ISSN Guidelines",
     description: "Calculate daily protein intake for muscle building. ISSN recommends 1.6–2.2g per kg bodyweight. Includes Singapore hawker food protein sources.",
-    url: "https://bmicalculator.sg/protein-calculator/muscle-gain",
+    url: "https://www.bmicalculatorsingapore.com/protein-calculator/muscle-gain",
     type: "website",
   },
   twitter: {
@@ -51,13 +51,13 @@ export default function ProteinMuscleGainPage() {
       <CalculatorSchema
         name="Protein Calculator for Muscle Gain Singapore"
         description="Calculate daily protein intake for muscle building following ISSN guidelines of 1.6–2.2g per kg bodyweight."
-        url="https://bmicalculator.sg/protein-calculator/muscle-gain"
+        url="https://www.bmicalculatorsingapore.com/protein-calculator/muscle-gain"
         lastReviewed="2026-03-31"
         faqs={FAQS}
         breadcrumbs={[
-          { name: "Home", url: "https://bmicalculator.sg" },
-          { name: "Protein Calculator", url: "https://bmicalculator.sg/protein-calculator" },
-          { name: "Muscle Gain", url: "https://bmicalculator.sg/protein-calculator/muscle-gain" },
+          { name: "Home", url: "https://www.bmicalculatorsingapore.com" },
+          { name: "Protein Calculator", url: "https://www.bmicalculatorsingapore.com/protein-calculator" },
+          { name: "Muscle Gain", url: "https://www.bmicalculatorsingapore.com/protein-calculator/muscle-gain" },
         ]}
       />
 

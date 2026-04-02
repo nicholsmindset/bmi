@@ -8,11 +8,11 @@ export const metadata: Metadata = {
   title: "Body Fat Calculator for Men — US Navy Method Singapore",
   description:
     "Calculate body fat percentage for men using the US Navy circumference method. Measure waist and neck. ACE body fat categories for men.",
-  alternates: { canonical: "https://bmicalculator.sg/body-fat-calculator/men" },
+  alternates: { canonical: "https://www.bmicalculatorsingapore.com/body-fat-calculator/men" },
   openGraph: {
     title: "Body Fat Calculator for Men — US Navy Method Singapore",
     description: "Calculate body fat percentage for men using the US Navy circumference method. Measure waist and neck. ACE body fat categories for men.",
-    url: "https://bmicalculator.sg/body-fat-calculator/men",
+    url: "https://www.bmicalculatorsingapore.com/body-fat-calculator/men",
     type: "website",
   },
   twitter: {
@@ -48,13 +48,13 @@ export default function BodyFatMenPage() {
       <CalculatorSchema
         name="Body Fat Calculator for Men Singapore"
         description="Calculate body fat percentage for men using the US Navy circumference method with ACE category assessment."
-        url="https://bmicalculator.sg/body-fat-calculator/men"
+        url="https://www.bmicalculatorsingapore.com/body-fat-calculator/men"
         lastReviewed="2026-03-31"
         faqs={FAQS}
         breadcrumbs={[
-          { name: "Home", url: "https://bmicalculator.sg" },
-          { name: "Body Fat Calculator", url: "https://bmicalculator.sg/body-fat-calculator" },
-          { name: "Men", url: "https://bmicalculator.sg/body-fat-calculator/men" },
+          { name: "Home", url: "https://www.bmicalculatorsingapore.com" },
+          { name: "Body Fat Calculator", url: "https://www.bmicalculatorsingapore.com/body-fat-calculator" },
+          { name: "Men", url: "https://www.bmicalculatorsingapore.com/body-fat-calculator/men" },
         ]}
       />
 

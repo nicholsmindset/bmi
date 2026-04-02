@@ -8,12 +8,12 @@ export const metadata: Metadata = {
   title: "Body Fat Percentage Calculator Singapore — US Navy Method",
   description:
     "Calculate body fat % with just a tape measure. Uses the US Navy method. See ACE body fat categories and healthy ranges for Singaporean men and women.",
-  alternates: { canonical: "https://bmicalculator.sg/body-fat-calculator" },
+  alternates: { canonical: "https://www.bmicalculatorsingapore.com/body-fat-calculator" },
   openGraph: {
     title: "Body Fat Percentage Calculator Singapore — US Navy Method",
     description:
       "Calculate body fat % with just a tape measure. Uses the US Navy method. See ACE body fat categories and healthy ranges for Singaporean men and women.",
-    url: "https://bmicalculator.sg/body-fat-calculator",
+    url: "https://www.bmicalculatorsingapore.com/body-fat-calculator",
     type: "website",
   },
   twitter: {
@@ -29,7 +29,7 @@ export default function BodyFatPage() {
       <CalculatorSchema
         name="Body Fat Percentage Calculator Singapore"
         description="Calculate body fat percentage using the US Navy method with ACE category assessment."
-        url="https://bmicalculator.sg/body-fat-calculator"
+        url="https://www.bmicalculatorsingapore.com/body-fat-calculator"
         lastReviewed="2026-03-31"
         faqs={[
           {
@@ -54,8 +54,8 @@ export default function BodyFatPage() {
           },
         ]}
         breadcrumbs={[
-          { name: "Home", url: "https://bmicalculator.sg" },
-          { name: "Body Fat Calculator", url: "https://bmicalculator.sg/body-fat-calculator" },
+          { name: "Home", url: "https://www.bmicalculatorsingapore.com" },
+          { name: "Body Fat Calculator", url: "https://www.bmicalculatorsingapore.com/body-fat-calculator" },
         ]}
         isMedical
       />

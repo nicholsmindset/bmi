@@ -54,7 +54,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   return {
     title: `Calories Burned ${label} for ${kg}kg — Singapore Calculator`,
     description: `How many calories does a ${kg}kg person burn ${activity}? At moderate pace: ${cal30} kcal in 30 min, ${cal60} kcal in 1 hour. Calculator with slow, moderate, and fast intensity.`,
-    alternates: { canonical: `https://bmicalculator.sg/calories-burned/${activity}/${weight}` },
+    alternates: { canonical: `https://www.bmicalculatorsingapore.com/calories-burned/${activity}/${weight}` },
   };
 }
 
@@ -76,7 +76,7 @@ export default async function CaloriesBurnedPage({ params }: Props) {
       <CalculatorSchema
         name={`Calories Burned ${met.label} for ${kg}kg`}
         description={`Calories burned ${activity} calculator for a ${kg}kg person at different intensities.`}
-        url={`https://bmicalculator.sg/calories-burned/${activity}/${weight}`}
+        url={`https://www.bmicalculatorsingapore.com/calories-burned/${activity}/${weight}`}
         lastReviewed="2026-03-31"
         faqs={[
           {
@@ -97,9 +97,9 @@ export default async function CaloriesBurnedPage({ params }: Props) {
           },
         ]}
         breadcrumbs={[
-          { name: "Home", url: "https://bmicalculator.sg" },
-          { name: "Calories Burned Calculator", url: "https://bmicalculator.sg/calories-burned-calculator" },
-          { name: `${met.label} (${kg}kg)`, url: `https://bmicalculator.sg/calories-burned/${activity}/${weight}` },
+          { name: "Home", url: "https://www.bmicalculatorsingapore.com" },
+          { name: "Calories Burned Calculator", url: "https://www.bmicalculatorsingapore.com/calories-burned-calculator" },
+          { name: `${met.label} (${kg}kg)`, url: `https://www.bmicalculatorsingapore.com/calories-burned/${activity}/${weight}` },
         ]}
       />
 

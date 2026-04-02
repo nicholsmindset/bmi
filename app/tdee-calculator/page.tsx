@@ -9,12 +9,12 @@ export const metadata: Metadata = {
   title: "TDEE Calculator Singapore — Total Daily Energy Expenditure",
   description:
     "Calculate your Total Daily Energy Expenditure (TDEE) using Mifflin-St Jeor. Singapore HPB-aligned activity levels. Know exactly how many calories you burn per day.",
-  alternates: { canonical: "https://bmicalculator.sg/tdee-calculator" },
+  alternates: { canonical: "https://www.bmicalculatorsingapore.com/tdee-calculator" },
   openGraph: {
     title: "TDEE Calculator Singapore — Total Daily Energy Expenditure",
     description:
       "Calculate your Total Daily Energy Expenditure (TDEE) using Mifflin-St Jeor. Singapore HPB-aligned activity levels. Know exactly how many calories you burn per day.",
-    url: "https://bmicalculator.sg/tdee-calculator",
+    url: "https://www.bmicalculatorsingapore.com/tdee-calculator",
     type: "website",
   },
   twitter: {
@@ -65,7 +65,7 @@ export default function TDEEPage() {
       <CalculatorSchema
         name="TDEE Calculator Singapore"
         description="Calculate your Total Daily Energy Expenditure using the Mifflin-St Jeor formula with Singapore HPB-aligned activity levels."
-        url="https://bmicalculator.sg/tdee-calculator"
+        url="https://www.bmicalculatorsingapore.com/tdee-calculator"
         lastReviewed="2026-03-31"
         faqs={[
           {
@@ -90,8 +90,8 @@ export default function TDEEPage() {
           },
         ]}
         breadcrumbs={[
-          { name: "Home", url: "https://bmicalculator.sg" },
-          { name: "TDEE Calculator", url: "https://bmicalculator.sg/tdee-calculator" },
+          { name: "Home", url: "https://www.bmicalculatorsingapore.com" },
+          { name: "TDEE Calculator", url: "https://www.bmicalculatorsingapore.com/tdee-calculator" },
         ]}
         isMedical
       />

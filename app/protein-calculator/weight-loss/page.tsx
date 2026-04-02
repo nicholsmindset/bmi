@@ -8,11 +8,11 @@ export const metadata: Metadata = {
   title: "Protein Calculator for Weight Loss Singapore — Preserve Muscle",
   description:
     "Calculate protein intake for weight loss. High protein (1.2–1.6g/kg) preserves muscle during a calorie deficit. Singapore-focused.",
-  alternates: { canonical: "https://bmicalculator.sg/protein-calculator/weight-loss" },
+  alternates: { canonical: "https://www.bmicalculatorsingapore.com/protein-calculator/weight-loss" },
   openGraph: {
     title: "Protein Calculator for Weight Loss Singapore — Preserve Muscle",
     description: "Calculate protein intake for weight loss. High protein (1.2–1.6g/kg) preserves muscle during a calorie deficit. Singapore-focused.",
-    url: "https://bmicalculator.sg/protein-calculator/weight-loss",
+    url: "https://www.bmicalculatorsingapore.com/protein-calculator/weight-loss",
     type: "website",
   },
   twitter: {
@@ -40,13 +40,13 @@ export default function ProteinWeightLossPage() {
       <CalculatorSchema
         name="Protein Calculator for Weight Loss Singapore"
         description="Calculate daily protein intake for weight loss — 1.2–1.6g/kg to preserve muscle during a calorie deficit."
-        url="https://bmicalculator.sg/protein-calculator/weight-loss"
+        url="https://www.bmicalculatorsingapore.com/protein-calculator/weight-loss"
         lastReviewed="2026-03-31"
         faqs={FAQS}
         breadcrumbs={[
-          { name: "Home", url: "https://bmicalculator.sg" },
-          { name: "Protein Calculator", url: "https://bmicalculator.sg/protein-calculator" },
-          { name: "Weight Loss", url: "https://bmicalculator.sg/protein-calculator/weight-loss" },
+          { name: "Home", url: "https://www.bmicalculatorsingapore.com" },
+          { name: "Protein Calculator", url: "https://www.bmicalculatorsingapore.com/protein-calculator" },
+          { name: "Weight Loss", url: "https://www.bmicalculatorsingapore.com/protein-calculator/weight-loss" },
         ]}
       />
 

@@ -1,9 +1,9 @@
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Privacy Policy — bmicalculator.sg",
-  description: "Privacy Policy for bmicalculator.sg. Learn how we collect, use, and protect your information.",
-  alternates: { canonical: "https://bmicalculator.sg/privacy" },
+  title: "Privacy Policy — bmicalculatorsingapore.com",
+  description: "Privacy Policy for bmicalculatorsingapore.com. Learn how we collect, use, and protect your information.",
+  alternates: { canonical: "https://www.bmicalculatorsingapore.com/privacy" },
   robots: { index: true, follow: true },
 };
 
@@ -29,8 +29,8 @@ export default function PrivacyPage() {
             1. Who We Are
           </h2>
           <p>
-            bmicalculator.sg (&ldquo;we&rdquo;, &ldquo;us&rdquo;, &ldquo;our&rdquo;) operates the website at{" "}
-            <strong>https://bmicalculator.sg</strong>, a free Singapore health calculator suite built on
+            bmicalculatorsingapore.com (&ldquo;we&rdquo;, &ldquo;us&rdquo;, &ldquo;our&rdquo;) operates the website at{" "}
+            <strong>https://www.bmicalculatorsingapore.com</strong>, a free Singapore health calculator suite built on
             Health Promotion Board (HPB) Asian standards. This Privacy Policy explains how we handle
             information when you use our website.
           </p>
@@ -108,7 +108,7 @@ export default function PrivacyPage() {
             4. Affiliate Links
           </h2>
           <p>
-            Some pages on bmicalculator.sg contain affiliate links to third-party retailers including
+            Some pages on bmicalculatorsingapore.com contain affiliate links to third-party retailers including
             iHerb, Amazon Singapore, Lazada, and Shopee. When you click an affiliate link and make a
             purchase, we may earn a commission at no additional cost to you. These third-party websites
             have their own privacy policies which govern any data you provide to them. We are not
@@ -221,7 +221,7 @@ export default function PrivacyPage() {
           </h2>
           <p>
             If you have any questions about this Privacy Policy or our data practices, please contact us
-            at: <strong style={{ color: "var(--color-on-surface)" }}>hello@bmicalculator.sg</strong>
+            at: <strong style={{ color: "var(--color-on-surface)" }}>hello@bmicalculatorsingapore.com</strong>
           </p>
         </section>
 

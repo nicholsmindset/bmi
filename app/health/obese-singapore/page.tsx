@@ -7,11 +7,11 @@ export const metadata: Metadata = {
   title: "Obesity in Singapore — Rates, HPB Threshold BMI 27.5 & Treatment",
   description:
     "12.7% of Singapore adults are obese (BMI ≥27.5 by HPB Asian standards). Learn about metabolic complications, waist circumference risk, and the HPB treatment pathway for obesity.",
-  alternates: { canonical: "https://bmicalculator.sg/health/obese-singapore" },
+  alternates: { canonical: "https://www.bmicalculatorsingapore.com/health/obese-singapore" },
   openGraph: {
     title: "Obesity in Singapore — Rates, HPB Threshold BMI 27.5 & Treatment",
     description: "12.7% of Singapore adults are obese (BMI ≥27.5 by HPB Asian standards). Learn about metabolic complications, waist circumference risk, and the HPB treatment pathway for obesity.",
-    url: "https://bmicalculator.sg/health/obese-singapore",
+    url: "https://www.bmicalculatorsingapore.com/health/obese-singapore",
     type: "website",
   },
   twitter: {
@@ -56,14 +56,14 @@ export default function ObeseSingaporePage() {
       <CalculatorSchema
         name="Obesity in Singapore"
         description="Guide to obesity rates, HPB BMI threshold, metabolic complications, and treatment options in Singapore."
-        url="https://bmicalculator.sg/health/obese-singapore"
+        url="https://www.bmicalculatorsingapore.com/health/obese-singapore"
         lastReviewed="2026-03-31"
         isMedical={true}
         faqs={FAQS}
         breadcrumbs={[
-          { name: "Home", url: "https://bmicalculator.sg" },
-          { name: "Health", url: "https://bmicalculator.sg/health" },
-          { name: "Obesity in Singapore", url: "https://bmicalculator.sg/health/obese-singapore" },
+          { name: "Home", url: "https://www.bmicalculatorsingapore.com" },
+          { name: "Health", url: "https://www.bmicalculatorsingapore.com/health" },
+          { name: "Obesity in Singapore", url: "https://www.bmicalculatorsingapore.com/health/obese-singapore" },
         ]}
       />
 

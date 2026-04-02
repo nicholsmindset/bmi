@@ -8,11 +8,11 @@ export const metadata: Metadata = {
   title: "Healthy BMI Singapore — HPB Asian BMI Ranges Explained",
   description:
     "What is a healthy BMI in Singapore? HPB recommends 18.5–22.9 for Asian adults. Check your BMI against Singapore's official HPB Asian standards — overweight starts at 23.0.",
-  alternates: { canonical: "https://bmicalculator.sg/bmi-calculator/asian" },
+  alternates: { canonical: "https://www.bmicalculatorsingapore.com/bmi-calculator/asian" },
   openGraph: {
     title: "Healthy BMI Singapore — HPB Asian BMI Ranges Explained",
     description: "What is a healthy BMI in Singapore? HPB recommends 18.5–22.9 for Asian adults. Check your BMI against Singapore's official HPB Asian standards — overweight starts at 23.0.",
-    url: "https://bmicalculator.sg/bmi-calculator/asian",
+    url: "https://www.bmicalculatorsingapore.com/bmi-calculator/asian",
     type: "website",
   },
   twitter: {
@@ -27,7 +27,7 @@ export default function AsianBMIPage() {
       <CalculatorSchema
         name="Asian BMI Calculator"
         description="BMI calculator using HPB Asian standards for Singaporeans."
-        url="https://bmicalculator.sg/bmi-calculator/asian"
+        url="https://www.bmicalculatorsingapore.com/bmi-calculator/asian"
         lastReviewed="2026-03-31"
         faqs={[
           { question: "What is a healthy BMI for Asians?", answer: "The HPB recommends 18.5–22.9 for Asians. Above 23.0 is overweight, above 27.5 is obese." },
@@ -36,9 +36,9 @@ export default function AsianBMIPage() {
           { question: "Does this apply to Chinese, Malay, and Indian Singaporeans?", answer: "Yes — HPB Asian standards apply to all Asian ethnic groups in Singapore." },
         ]}
         breadcrumbs={[
-          { name: "Home", url: "https://bmicalculator.sg" },
-          { name: "BMI Calculator", url: "https://bmicalculator.sg/bmi-calculator" },
-          { name: "Asian Standards", url: "https://bmicalculator.sg/bmi-calculator/asian" },
+          { name: "Home", url: "https://www.bmicalculatorsingapore.com" },
+          { name: "BMI Calculator", url: "https://www.bmicalculatorsingapore.com/bmi-calculator" },
+          { name: "Asian Standards", url: "https://www.bmicalculatorsingapore.com/bmi-calculator/asian" },
         ]}
         isMedical
       />

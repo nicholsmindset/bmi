@@ -7,11 +7,11 @@ export const metadata: Metadata = {
   title: "Diabetes Risk in Singapore — BMI, Weight & Prevention Guide",
   description:
     "Singapore has one of the world's highest diabetes rates at 9.1% of adults. Learn how BMI, overweight, and lifestyle factors drive diabetes risk and what the HPB recommends to prevent it.",
-  alternates: { canonical: "https://bmicalculator.sg/health/diabetes-risk" },
+  alternates: { canonical: "https://www.bmicalculatorsingapore.com/health/diabetes-risk" },
   openGraph: {
     title: "Diabetes Risk in Singapore — BMI, Weight & Prevention Guide",
     description: "Singapore has one of the world's highest diabetes rates at 9.1% of adults. Learn how BMI, overweight, and lifestyle factors drive diabetes risk and what the HPB recommends to prevent it.",
-    url: "https://bmicalculator.sg/health/diabetes-risk",
+    url: "https://www.bmicalculatorsingapore.com/health/diabetes-risk",
     type: "website",
   },
   twitter: {
@@ -56,14 +56,14 @@ export default function DiabetesRiskPage() {
       <CalculatorSchema
         name="Diabetes Risk in Singapore"
         description="Guide to diabetes risk factors, BMI connection, and HPB prevention recommendations for Singaporeans."
-        url="https://bmicalculator.sg/health/diabetes-risk"
+        url="https://www.bmicalculatorsingapore.com/health/diabetes-risk"
         lastReviewed="2026-03-31"
         isMedical={true}
         faqs={FAQS}
         breadcrumbs={[
-          { name: "Home", url: "https://bmicalculator.sg" },
-          { name: "Health", url: "https://bmicalculator.sg/health" },
-          { name: "Diabetes Risk", url: "https://bmicalculator.sg/health/diabetes-risk" },
+          { name: "Home", url: "https://www.bmicalculatorsingapore.com" },
+          { name: "Health", url: "https://www.bmicalculatorsingapore.com/health" },
+          { name: "Diabetes Risk", url: "https://www.bmicalculatorsingapore.com/health/diabetes-risk" },
         ]}
       />
 

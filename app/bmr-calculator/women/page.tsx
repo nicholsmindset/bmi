@@ -8,11 +8,11 @@ export const metadata: Metadata = {
   title: "BMR Calculator for Women — Mifflin-St Jeor Singapore",
   description:
     "Calculate your Basal Metabolic Rate as a woman using the Mifflin-St Jeor formula. Formula: BMR = 10×weight + 6.25×height − 5×age − 161.",
-  alternates: { canonical: "https://bmicalculator.sg/bmr-calculator/women" },
+  alternates: { canonical: "https://www.bmicalculatorsingapore.com/bmr-calculator/women" },
   openGraph: {
     title: "BMR Calculator for Women — Mifflin-St Jeor Singapore",
     description: "Calculate your Basal Metabolic Rate as a woman using the Mifflin-St Jeor formula. Formula: BMR = 10×weight + 6.25×height − 5×age − 161.",
-    url: "https://bmicalculator.sg/bmr-calculator/women",
+    url: "https://www.bmicalculatorsingapore.com/bmr-calculator/women",
     type: "website",
   },
   twitter: {
@@ -40,13 +40,13 @@ export default function BMRWomenPage() {
       <CalculatorSchema
         name="BMR Calculator for Women Singapore"
         description="Calculate Basal Metabolic Rate for women using the Mifflin-St Jeor formula: BMR = 10×weight + 6.25×height − 5×age − 161."
-        url="https://bmicalculator.sg/bmr-calculator/women"
+        url="https://www.bmicalculatorsingapore.com/bmr-calculator/women"
         lastReviewed="2026-03-31"
         faqs={FAQS}
         breadcrumbs={[
-          { name: "Home", url: "https://bmicalculator.sg" },
-          { name: "BMR Calculator", url: "https://bmicalculator.sg/bmr-calculator" },
-          { name: "Women", url: "https://bmicalculator.sg/bmr-calculator/women" },
+          { name: "Home", url: "https://www.bmicalculatorsingapore.com" },
+          { name: "BMR Calculator", url: "https://www.bmicalculatorsingapore.com/bmr-calculator" },
+          { name: "Women", url: "https://www.bmicalculatorsingapore.com/bmr-calculator/women" },
         ]}
       />
 

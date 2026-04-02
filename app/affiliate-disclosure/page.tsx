@@ -2,9 +2,9 @@ import type { Metadata } from "next";
 import Link from "next/link";
 
 export const metadata: Metadata = {
-  title: "Affiliate Disclosure — bmicalculator.sg",
-  description: "Affiliate disclosure for bmicalculator.sg. We earn commissions from qualifying purchases through affiliate links at no extra cost to you.",
-  alternates: { canonical: "https://bmicalculator.sg/affiliate-disclosure" },
+  title: "Affiliate Disclosure — bmicalculatorsingapore.com",
+  description: "Affiliate disclosure for bmicalculatorsingapore.com. We earn commissions from qualifying purchases through affiliate links at no extra cost to you.",
+  alternates: { canonical: "https://www.bmicalculatorsingapore.com/affiliate-disclosure" },
   robots: { index: true, follow: true },
 };
 
@@ -55,7 +55,7 @@ export default function AffiliateDisclosurePage() {
         }}
       >
         <p className="text-sm leading-relaxed">
-          bmicalculator.sg participates in affiliate marketing programmes. This means we may earn a
+          bmicalculatorsingapore.com participates in affiliate marketing programmes. This means we may earn a
           commission when you click an affiliate link and make a qualifying purchase —{" "}
           <strong style={{ color: "var(--color-on-surface)" }}>at no additional cost to you</strong>.
           Affiliate commissions help us keep all calculators free and ad-supported for everyone.
@@ -69,7 +69,7 @@ export default function AffiliateDisclosurePage() {
             1. What Is Affiliate Marketing?
           </h2>
           <p>
-            Affiliate marketing is a performance-based arrangement where a website (bmicalculator.sg)
+            Affiliate marketing is a performance-based arrangement where a website (bmicalculatorsingapore.com)
             earns a commission by promoting products or services of another company. When you click a
             specially tracked link on our site and complete a purchase, we receive a small percentage
             of the sale. The price you pay is not affected in any way.
@@ -152,7 +152,7 @@ export default function AffiliateDisclosurePage() {
             5. Amazon Associates Disclosure
           </h2>
           <p>
-            bmicalculator.sg is a participant in the Amazon Associates Programme, an affiliate
+            bmicalculatorsingapore.com is a participant in the Amazon Associates Programme, an affiliate
             advertising programme designed to provide a means for sites to earn advertising fees by
             advertising and linking to Amazon.sg. Our Amazon affiliate tag is{" "}
             <strong style={{ color: "var(--color-on-surface)" }}>robertnicho0a-20</strong>.
@@ -178,7 +178,7 @@ export default function AffiliateDisclosurePage() {
           <p>
             If you have any questions about our affiliate relationships or how we select products to
             recommend, please contact us at{" "}
-            <strong style={{ color: "var(--color-on-surface)" }}>hello@bmicalculator.sg</strong>.
+            <strong style={{ color: "var(--color-on-surface)" }}>hello@bmicalculatorsingapore.com</strong>.
           </p>
         </section>
 

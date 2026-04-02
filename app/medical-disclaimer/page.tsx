@@ -2,9 +2,9 @@ import type { Metadata } from "next";
 import Link from "next/link";
 
 export const metadata: Metadata = {
-  title: "Medical Disclaimer — bmicalculator.sg",
-  description: "Medical disclaimer for bmicalculator.sg. Our calculators provide general health information only and are not a substitute for professional medical advice.",
-  alternates: { canonical: "https://bmicalculator.sg/medical-disclaimer" },
+  title: "Medical Disclaimer — bmicalculatorsingapore.com",
+  description: "Medical disclaimer for bmicalculatorsingapore.com. Our calculators provide general health information only and are not a substitute for professional medical advice.",
+  alternates: { canonical: "https://www.bmicalculatorsingapore.com/medical-disclaimer" },
   robots: { index: true, follow: true },
 };
 
@@ -35,7 +35,7 @@ export default function MedicalDisclaimerPage() {
           Important Notice
         </p>
         <p className="text-sm leading-relaxed">
-          The health calculators, information, and content on bmicalculator.sg are for{" "}
+          The health calculators, information, and content on bmicalculatorsingapore.com are for{" "}
           <strong>general informational and educational purposes only</strong>. They are not intended
           to be, and should not be used as, a substitute for professional medical advice, diagnosis,
           or treatment. Always consult a qualified healthcare professional before making any health
@@ -50,7 +50,7 @@ export default function MedicalDisclaimerPage() {
             1. Not Medical Advice
           </h2>
           <p className="mb-3">
-            Nothing on bmicalculator.sg constitutes medical advice, and no doctor-patient relationship
+            Nothing on bmicalculatorsingapore.com constitutes medical advice, and no doctor-patient relationship
             is created by your use of this website. The calculators, articles, and health information
             are based on publicly available guidelines from Singapore&apos;s Health Promotion Board (HPB),
             Ministry of Health (MOH), and international health bodies.
@@ -131,7 +131,7 @@ export default function MedicalDisclaimerPage() {
             5. No Liability
           </h2>
           <p>
-            bmicalculator.sg and its operators disclaim all liability for any loss, injury, or damage
+            bmicalculatorsingapore.com and its operators disclaim all liability for any loss, injury, or damage
             arising from your use of, or reliance on, any information or calculator results on this
             website. Use of this website is at your own risk.
           </p>

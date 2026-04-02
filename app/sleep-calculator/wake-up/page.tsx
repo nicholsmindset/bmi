@@ -7,11 +7,11 @@ export const metadata: Metadata = {
   title: "Wake Up Time Calculator Singapore — Best Alarm Times by Sleep Cycle",
   description:
     "Enter your bedtime and find the best times to wake up based on 90-minute sleep cycles. Feel refreshed instead of groggy every morning.",
-  alternates: { canonical: "https://bmicalculator.sg/sleep-calculator/wake-up" },
+  alternates: { canonical: "https://www.bmicalculatorsingapore.com/sleep-calculator/wake-up" },
   openGraph: {
     title: "Wake Up Time Calculator Singapore — Best Alarm Times by Sleep Cycle",
     description: "Enter your bedtime and find the best times to wake up based on 90-minute sleep cycles. Feel refreshed instead of groggy every morning.",
-    url: "https://bmicalculator.sg/sleep-calculator/wake-up",
+    url: "https://www.bmicalculatorsingapore.com/sleep-calculator/wake-up",
     type: "website",
   },
   twitter: {
@@ -26,7 +26,7 @@ export default function WakeUpCalculatorPage() {
       <CalculatorSchema
         name="Wake Up Time Calculator"
         description="Find the best wake-up times based on your bedtime and 90-minute sleep cycles."
-        url="https://bmicalculator.sg/sleep-calculator/wake-up"
+        url="https://www.bmicalculatorsingapore.com/sleep-calculator/wake-up"
         lastReviewed="2026-03-31"
         faqs={[
           {
@@ -51,9 +51,9 @@ export default function WakeUpCalculatorPage() {
           },
         ]}
         breadcrumbs={[
-          { name: "Home", url: "https://bmicalculator.sg" },
-          { name: "Sleep Calculator", url: "https://bmicalculator.sg/sleep-calculator" },
-          { name: "Wake Up Time Calculator", url: "https://bmicalculator.sg/sleep-calculator/wake-up" },
+          { name: "Home", url: "https://www.bmicalculatorsingapore.com" },
+          { name: "Sleep Calculator", url: "https://www.bmicalculatorsingapore.com/sleep-calculator" },
+          { name: "Wake Up Time Calculator", url: "https://www.bmicalculatorsingapore.com/sleep-calculator/wake-up" },
         ]}
       />
 

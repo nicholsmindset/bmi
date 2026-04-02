@@ -8,11 +8,11 @@ export const metadata: Metadata = {
   title: "BMI Calculator for Women Singapore — Healthy Weight Range",
   description:
     "BMI calculator for women using Singapore HPB Asian standards. See healthy BMI ranges for Singaporean women and what your result means for your health.",
-  alternates: { canonical: "https://bmicalculator.sg/bmi-calculator/women" },
+  alternates: { canonical: "https://www.bmicalculatorsingapore.com/bmi-calculator/women" },
   openGraph: {
     title: "BMI Calculator for Women Singapore — Healthy Weight Range",
     description: "BMI calculator for women using Singapore HPB Asian standards. See healthy BMI ranges for Singaporean women and what your result means for your health.",
-    url: "https://bmicalculator.sg/bmi-calculator/women",
+    url: "https://www.bmicalculatorsingapore.com/bmi-calculator/women",
     type: "website",
   },
   twitter: {
@@ -27,7 +27,7 @@ export default function BMIWomenPage() {
       <CalculatorSchema
         name="BMI Calculator for Women"
         description="BMI calculator for women using Singapore HPB Asian standards."
-        url="https://bmicalculator.sg/bmi-calculator/women"
+        url="https://www.bmicalculatorsingapore.com/bmi-calculator/women"
         lastReviewed="2026-03-31"
         faqs={[
           { question: "What is a healthy BMI for women in Singapore?", answer: "A healthy BMI for women in Singapore is 18.5–22.9 under HPB Asian standards. Women generally have higher body fat percentages than men at the same BMI." },
@@ -36,9 +36,9 @@ export default function BMIWomenPage() {
           { question: "What BMI is ideal for a woman to get pregnant?", answer: "HPB recommends a BMI of 18.5–22.9 before pregnancy. Both underweight (BMI <18.5) and overweight (BMI ≥23.0) status can affect fertility and pregnancy outcomes." },
         ]}
         breadcrumbs={[
-          { name: "Home", url: "https://bmicalculator.sg" },
-          { name: "BMI Calculator", url: "https://bmicalculator.sg/bmi-calculator" },
-          { name: "BMI for Women", url: "https://bmicalculator.sg/bmi-calculator/women" },
+          { name: "Home", url: "https://www.bmicalculatorsingapore.com" },
+          { name: "BMI Calculator", url: "https://www.bmicalculatorsingapore.com/bmi-calculator" },
+          { name: "BMI for Women", url: "https://www.bmicalculatorsingapore.com/bmi-calculator/women" },
         ]}
         isMedical
       />

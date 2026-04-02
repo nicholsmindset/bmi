@@ -9,12 +9,12 @@ export const metadata: Metadata = {
   title: "Sleep Calculator Singapore — Best Bedtime & Wake Up Time",
   description:
     "Find the best time to sleep or wake up based on 90-minute sleep cycles. Enter your wake time to get 4 bedtime options. Avoid grogginess by waking between cycles.",
-  alternates: { canonical: "https://bmicalculator.sg/sleep-calculator" },
+  alternates: { canonical: "https://www.bmicalculatorsingapore.com/sleep-calculator" },
   openGraph: {
     title: "Sleep Calculator Singapore — Best Bedtime & Wake Up Time",
     description:
       "Find the best time to sleep or wake up based on 90-minute sleep cycles. Enter your wake time to get 4 bedtime options. Avoid grogginess by waking between cycles.",
-    url: "https://bmicalculator.sg/sleep-calculator",
+    url: "https://www.bmicalculatorsingapore.com/sleep-calculator",
     type: "website",
   },
   twitter: {
@@ -54,7 +54,7 @@ export default function SleepCalculatorPage() {
       <CalculatorSchema
         name="Sleep Calculator Singapore"
         description="Calculate the optimal bedtime or wake-up time based on 90-minute sleep cycles."
-        url="https://bmicalculator.sg/sleep-calculator"
+        url="https://www.bmicalculatorsingapore.com/sleep-calculator"
         lastReviewed="2026-03-31"
         faqs={[
           {
@@ -79,8 +79,8 @@ export default function SleepCalculatorPage() {
           },
         ]}
         breadcrumbs={[
-          { name: "Home", url: "https://bmicalculator.sg" },
-          { name: "Sleep Calculator", url: "https://bmicalculator.sg/sleep-calculator" },
+          { name: "Home", url: "https://www.bmicalculatorsingapore.com" },
+          { name: "Sleep Calculator", url: "https://www.bmicalculatorsingapore.com/sleep-calculator" },
         ]}
       />
 

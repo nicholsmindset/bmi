@@ -9,11 +9,11 @@ export const metadata: Metadata = {
   title: "Calories Burned Walking Calculator Singapore",
   description:
     "Calculate how many calories you burn walking based on your weight, pace, and duration. Singapore park connector and neighbourhood walking calorie estimates. Free, instant results.",
-  alternates: { canonical: "https://bmicalculator.sg/calories-burned-calculator/walking" },
+  alternates: { canonical: "https://www.bmicalculatorsingapore.com/calories-burned-calculator/walking" },
   openGraph: {
     title: "Calories Burned Walking Calculator Singapore",
     description: "Calculate how many calories you burn walking based on your weight, pace, and duration. Singapore park connector and neighbourhood walking calorie estimates. Free, instant results.",
-    url: "https://bmicalculator.sg/calories-burned-calculator/walking",
+    url: "https://www.bmicalculatorsingapore.com/calories-burned-calculator/walking",
     type: "website",
   },
   twitter: {
@@ -68,18 +68,18 @@ export default function WalkingCaloriesPage() {
       <CalculatorSchema
         name="Calories Burned Walking Calculator Singapore"
         description="Calculate calories burned walking based on weight, pace, and duration."
-        url="https://bmicalculator.sg/calories-burned-calculator/walking"
+        url="https://www.bmicalculatorsingapore.com/calories-burned-calculator/walking"
         lastReviewed="2026-03-31"
         faqs={FAQS}
         breadcrumbs={[
-          { name: "Home", url: "https://bmicalculator.sg" },
+          { name: "Home", url: "https://www.bmicalculatorsingapore.com" },
           {
             name: "Calories Burned",
-            url: "https://bmicalculator.sg/calories-burned-calculator",
+            url: "https://www.bmicalculatorsingapore.com/calories-burned-calculator",
           },
           {
             name: "Walking",
-            url: "https://bmicalculator.sg/calories-burned-calculator/walking",
+            url: "https://www.bmicalculatorsingapore.com/calories-burned-calculator/walking",
           },
         ]}
       />

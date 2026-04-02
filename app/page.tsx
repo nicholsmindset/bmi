@@ -7,12 +7,12 @@ export const metadata: Metadata = {
   title: "15 Free Singapore Health Calculators — BMI, Calories, Sleep & More",
   description:
     "Singapore's complete health calculator suite using HPB Asian standards. BMI, calorie deficit, TDEE, sleep, protein, body fat, blood pressure and more. Free, instant results.",
-  alternates: { canonical: "https://bmicalculator.sg" },
+  alternates: { canonical: "https://www.bmicalculatorsingapore.com" },
   openGraph: {
     title: "15 Free Singapore Health Calculators — BMI, Calories, Sleep & More",
     description:
       "Singapore's complete health calculator suite using HPB Asian standards. BMI, calorie deficit, TDEE, sleep, protein, body fat, blood pressure and more. Free, instant results.",
-    url: "https://bmicalculator.sg",
+    url: "https://www.bmicalculatorsingapore.com",
     type: "website",
   },
   twitter: {
@@ -93,20 +93,20 @@ export default function HomePage() {
             "@graph": [
               {
                 "@type": "WebSite",
-                "@id": "https://bmicalculator.sg/#website",
-                url: "https://bmicalculator.sg",
+                "@id": "https://www.bmicalculatorsingapore.com/#website",
+                url: "https://www.bmicalculatorsingapore.com",
                 name: "BMI Calculator Singapore",
                 description: "Singapore's complete health calculator suite using HPB Asian standards.",
                 potentialAction: {
                   "@type": "SearchAction",
-                  target: "https://bmicalculator.sg/bmi-calculator",
+                  target: "https://www.bmicalculatorsingapore.com/bmi-calculator",
                   "query-input": "required name=search_term_string",
                 },
               },
               {
                 "@type": "Organization",
-                "@id": "https://bmicalculator.sg/#organization",
-                url: "https://bmicalculator.sg",
+                "@id": "https://www.bmicalculatorsingapore.com/#organization",
+                url: "https://www.bmicalculatorsingapore.com",
                 name: "BMI Calculator Singapore",
                 description: "Free Singapore health calculators using HPB Asian standards.",
               },

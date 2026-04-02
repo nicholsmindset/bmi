@@ -7,11 +7,11 @@ export const metadata: Metadata = {
   title: "Overweight in Singapore — HPB Rates, BMI Standards & Weight Loss Guide",
   description:
     "40.3% of Singapore adults are overweight or obese by Asian HPB standards. Learn what 'overweight' means in Singapore, why the threshold is BMI 23, and how to lose weight safely.",
-  alternates: { canonical: "https://bmicalculator.sg/health/overweight-singapore" },
+  alternates: { canonical: "https://www.bmicalculatorsingapore.com/health/overweight-singapore" },
   openGraph: {
     title: "Overweight in Singapore — HPB Rates, BMI Standards & Weight Loss Guide",
     description: "40.3% of Singapore adults are overweight or obese by Asian HPB standards. Learn what 'overweight' means in Singapore, why the threshold is BMI 23, and how to lose weight safely.",
-    url: "https://bmicalculator.sg/health/overweight-singapore",
+    url: "https://www.bmicalculatorsingapore.com/health/overweight-singapore",
     type: "website",
   },
   twitter: {
@@ -56,14 +56,14 @@ export default function OverweightSingaporePage() {
       <CalculatorSchema
         name="Overweight in Singapore"
         description="Guide to overweight rates, BMI standards, and weight loss recommendations in Singapore."
-        url="https://bmicalculator.sg/health/overweight-singapore"
+        url="https://www.bmicalculatorsingapore.com/health/overweight-singapore"
         lastReviewed="2026-03-31"
         isMedical={true}
         faqs={FAQS}
         breadcrumbs={[
-          { name: "Home", url: "https://bmicalculator.sg" },
-          { name: "Health", url: "https://bmicalculator.sg/health" },
-          { name: "Overweight in Singapore", url: "https://bmicalculator.sg/health/overweight-singapore" },
+          { name: "Home", url: "https://www.bmicalculatorsingapore.com" },
+          { name: "Health", url: "https://www.bmicalculatorsingapore.com/health" },
+          { name: "Overweight in Singapore", url: "https://www.bmicalculatorsingapore.com/health/overweight-singapore" },
         ]}
       />
 

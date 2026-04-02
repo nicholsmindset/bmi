@@ -9,12 +9,12 @@ export const metadata: Metadata = {
   title: "Calorie Calculator Singapore — How Many Calories Should I Eat?",
   description:
     "Calculate your daily calorie needs using Singapore HPB dietary guidelines. Enter your stats for a personalised calorie target to lose, maintain, or gain weight.",
-  alternates: { canonical: "https://bmicalculator.sg/calorie-calculator" },
+  alternates: { canonical: "https://www.bmicalculatorsingapore.com/calorie-calculator" },
   openGraph: {
     title: "Calorie Calculator Singapore — How Many Calories Should I Eat?",
     description:
       "Calculate your daily calorie needs using Singapore HPB dietary guidelines. Enter your stats for a personalised calorie target to lose, maintain, or gain weight.",
-    url: "https://bmicalculator.sg/calorie-calculator",
+    url: "https://www.bmicalculatorsingapore.com/calorie-calculator",
     type: "website",
   },
   twitter: {
@@ -88,12 +88,12 @@ export default function CalorieCalculatorPage() {
       <CalculatorSchema
         name="Calorie Calculator Singapore"
         description="Calculate your daily calorie needs using Singapore HPB dietary guidelines."
-        url="https://bmicalculator.sg/calorie-calculator"
+        url="https://www.bmicalculatorsingapore.com/calorie-calculator"
         lastReviewed="2026-03-31"
         faqs={FAQS}
         breadcrumbs={[
-          { name: "Home", url: "https://bmicalculator.sg" },
-          { name: "Calorie Calculator", url: "https://bmicalculator.sg/calorie-calculator" },
+          { name: "Home", url: "https://www.bmicalculatorsingapore.com" },
+          { name: "Calorie Calculator", url: "https://www.bmicalculatorsingapore.com/calorie-calculator" },
         ]}
       />
 
