@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Manrope, Public_Sans } from "next/font/google";
 import Link from "next/link";
+import Script from "next/script";
 import "./globals.css";
 
 
@@ -149,6 +150,18 @@ export default function RootLayout({
             </div>
           </div>
         </header>
+
+        {/* Google Analytics */}
+        <Script
+          src="https://www.googletagmanager.com/gtag/js?id=G-4BZMKT2Q3N"
+          strategy="afterInteractive"
+        />
+        <Script id="ga4" strategy="afterInteractive">{`
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+          gtag('config', 'G-4BZMKT2Q3N');
+        `}</Script>
 
         {/* Main */}
         <main className="flex-1">{children}</main>
