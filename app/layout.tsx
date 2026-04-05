@@ -23,7 +23,7 @@ export const metadata: Metadata = {
   metadataBase: new URL("https://www.bmicalculatorsingapore.com"),
   title: {
     default: "Singapore Health Calculators — BMI, Calories, Sleep & More",
-    template: "%s | bmicalculatorsingapore.com",
+    template: "%s",
   },
   description:
     "Free Singapore health calculators using HPB Asian standards. BMI, calorie deficit, TDEE, protein, sleep and 10 more tools. Instant results.",

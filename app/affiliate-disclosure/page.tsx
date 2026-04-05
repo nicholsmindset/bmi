@@ -2,8 +2,8 @@ import type { Metadata } from "next";
 import Link from "next/link";
 
 export const metadata: Metadata = {
-  title: "Affiliate Disclosure — bmicalculatorsingapore.com",
-  description: "Affiliate disclosure for bmicalculatorsingapore.com. We earn commissions from qualifying purchases through affiliate links at no extra cost to you.",
+  title: "Affiliate Disclosure — Singapore Health Calculators",
+  description: "We earn commissions from qualifying purchases through affiliate links at no extra cost to you. All product recommendations are independent and based on relevance.",
   alternates: { canonical: "https://www.bmicalculatorsingapore.com/affiliate-disclosure" },
   robots: { index: true, follow: true },
 };

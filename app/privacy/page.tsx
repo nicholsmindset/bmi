@@ -1,8 +1,8 @@
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Privacy Policy — bmicalculatorsingapore.com",
-  description: "Privacy Policy for bmicalculatorsingapore.com. Learn how we collect, use, and protect your information.",
+  title: "Privacy Policy — Singapore Health Calculators",
+  description: "Privacy policy for our Singapore health calculator suite. Learn how we collect, use, and protect your information in compliance with Singapore's PDPA.",
   alternates: { canonical: "https://www.bmicalculatorsingapore.com/privacy" },
   robots: { index: true, follow: true },
 };

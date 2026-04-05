@@ -2,8 +2,8 @@ import type { Metadata } from "next";
 import Link from "next/link";
 
 export const metadata: Metadata = {
-  title: "Medical Disclaimer — bmicalculatorsingapore.com",
-  description: "Medical disclaimer for bmicalculatorsingapore.com. Our calculators provide general health information only and are not a substitute for professional medical advice.",
+  title: "Medical Disclaimer — Singapore Health Calculators",
+  description: "Our calculators provide general health information only and are not a substitute for professional medical advice from a qualified doctor or healthcare provider.",
   alternates: { canonical: "https://www.bmicalculatorsingapore.com/medical-disclaimer" },
   robots: { index: true, follow: true },
 };
