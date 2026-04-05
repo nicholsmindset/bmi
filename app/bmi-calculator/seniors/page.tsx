@@ -30,10 +30,10 @@ export default function BMISeniorsPage() {
         url="https://www.bmicalculatorsingapore.com/bmi-calculator/seniors"
         lastReviewed="2026-03-31"
         faqs={[
-          { question: "What is a healthy BMI for seniors in Singapore?", answer: "For adults over 65, some guidelines suggest a slightly higher healthy BMI (up to 23–24) may be protective against frailty and malnutrition. Consult your doctor for personalised advice." },
+          { question: "What BMI is healthy for seniors over 65 in Singapore?", answer: "For Singaporeans aged 65 and above, some evidence suggests that a slightly higher BMI of 22–27 may be protective. Very low BMI (below 22) in older adults is associated with malnutrition, muscle loss, and higher mortality risk. Singapore HPB recommends individualized assessment for seniors." },
           { question: "Is being underweight dangerous for seniors?", answer: "Yes. Underweight seniors (BMI <18.5) are at higher risk of muscle loss, falls, fractures, and malnutrition. Maintaining muscle mass is especially important after 60." },
           { question: "Should seniors aim to lose weight to lower BMI?", answer: "Not necessarily. Seniors should avoid rapid weight loss without medical supervision as this can cause muscle loss. Focus on maintaining muscle through protein intake and activity." },
-          { question: "Does BMI become less accurate with age?", answer: "Yes. Older adults tend to have less muscle and more body fat at the same BMI. Body composition assessment (waist circumference, muscle mass) gives a more complete picture." },
+          { question: "Does BMI become less accurate with age?", answer: "Yes. Older adults tend to lose muscle mass and gain fat even with stable weight, so BMI can underestimate health risk. Additional measures like waist circumference (below 90cm for men, below 80cm for women) and grip strength assessment are recommended alongside BMI for seniors." },
         ]}
         breadcrumbs={[
           { name: "Home", url: "https://www.bmicalculatorsingapore.com" },

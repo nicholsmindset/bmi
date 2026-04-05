@@ -34,6 +34,8 @@ export default function BMITeensPage() {
           { question: "Can teenagers use adult BMI categories?", answer: "No. Adult BMI categories (underweight <18.5, healthy 18.5–22.9) only apply to adults aged 18+. Teen BMI must be assessed using growth percentile charts." },
           { question: "What is a healthy weight for a 16-year-old?", answer: "Healthy weight for a teenager depends on their height, age, and sex. Use Singapore HPB growth charts or consult your school health service or paediatrician." },
           { question: "Should teenagers try to lose weight based on BMI?", answer: "Teenagers should not attempt weight loss without medical supervision. BMI in teens is still developing. Consult a doctor or dietitian before any dietary changes." },
+          { question: "What BMI is healthy for teenagers in Singapore?", answer: "For teenagers aged 13–17 in Singapore, BMI is interpreted using age- and sex-specific percentile charts, not adult cutoffs. A BMI at the 85th percentile or above for age and sex indicates overweight. Singapore's National Health Survey found that 13% of adolescents are overweight or obese." },
+          { question: "Why is teen BMI different from adult BMI?", answer: "Teenagers are still growing, so their healthy BMI range changes every year. A BMI of 22 may be normal for a 17-year-old but high for a 13-year-old. Singapore uses HPB-aligned growth reference charts to assess teen BMI accurately." },
         ]}
         breadcrumbs={[
           { name: "Home", url: "https://www.bmicalculatorsingapore.com" },

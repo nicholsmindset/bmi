@@ -31,6 +31,16 @@ const FAQS = [
     answer:
       "Start by calculating your TDEE using the 1.2× sedentary multiplier, then subtract 300–500 calories to create a sustainable deficit. For a sedentary 70 kg Singaporean man, TDEE is approximately 1,900–2,000 kcal/day — a 500 kcal deficit means eating around 1,400–1,500 kcal. Increasing daily steps to 8,000–10,000 gradually raises your activity multiplier, allowing you to eat more while still losing weight. Singapore HPB recommends at least 150 minutes of moderate-intensity physical activity per week as a starting goal.",
   },
+  {
+    question: "What TDEE is normal for a sedentary person?",
+    answer:
+      "A sedentary adult's TDEE typically ranges from 1,600–2,200 kcal per day depending on height, weight, age, and sex. Sedentary means little or no exercise — desk jobs, minimal walking. Singapore's HPB recommends even sedentary adults aim for at least 150 minutes of moderate activity per week.",
+  },
+  {
+    question: "How many calories should a sedentary person eat to lose weight?",
+    answer:
+      "A sedentary person should eat 500–750 kcal below their TDEE to lose 0.5–0.75 kg per week. For most sedentary Singaporean adults, this means a daily target of 1,200–1,700 kcal. Calorie intake should not fall below 1,200 kcal (women) or 1,500 kcal (men) per day.",
+  },
 ];
 
 export default function TDEESedentaryPage() {

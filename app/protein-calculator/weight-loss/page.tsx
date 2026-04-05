@@ -31,6 +31,16 @@ const FAQS = [
     answer:
       "For most healthy adults, protein intakes up to 2.5g/kg per day are safe and have no adverse effects on kidney function (in people without pre-existing kidney disease). Singapore HPB does not set an upper limit but recommends a balanced diet. Excess protein is simply used for energy or excreted — it does not convert to fat in meaningful quantities. The practical concern for most people is cost and meal planning, not safety.",
   },
+  {
+    question: "How much protein should I eat to lose weight?",
+    answer:
+      "Eat 1.2–1.6g of protein per kg of body weight per day when in a calorie deficit. High protein intake during weight loss preserves muscle mass, increases satiety, and has a higher thermic effect (25–30% of calories burned in digestion vs 6–8% for carbs). For a 65kg person, this means 78–104g of protein daily.",
+  },
+  {
+    question: "Does eating more protein help with weight loss?",
+    answer:
+      "Yes. High-protein diets consistently outperform standard-protein diets for fat loss and muscle retention. Protein increases satiety hormones (GLP-1, PYY) and reduces the hunger hormone ghrelin. Replacing refined carbohydrates with lean protein sources is one of the most evidence-backed weight loss strategies.",
+  },
 ];
 
 export default function ProteinWeightLossPage() {

@@ -34,6 +34,8 @@ export default function BMIChildrenPage() {
           { question: "How is BMI interpreted for children in Singapore?", answer: "For children, BMI is plotted on growth charts. Above the 91st percentile for age and sex is considered overweight; above the 98th percentile is obese. Consult your paediatrician." },
           { question: "When should I be concerned about my child's BMI?", answer: "If your child's BMI-for-age consistently falls above the 91st or below the 5th percentile, consult a paediatrician or dietitian for personalised assessment." },
           { question: "Where can I get a Singapore children's BMI chart?", answer: "HPB and KKH Women's and Children's Hospital provide Singapore-specific growth charts for children. Your child's paediatrician can plot BMI against age-appropriate percentile curves." },
+          { question: "What is a healthy BMI for children in Singapore?", answer: "For children in Singapore, BMI is assessed using age- and sex-specific percentile charts, not fixed adult cutoffs. The HPB defines healthy weight as BMI between the 5th and 85th percentile for age and sex. Above the 85th percentile is overweight and above the 95th percentile is obese." },
+          { question: "How often should children's BMI be checked in Singapore?", answer: "Singapore schools conduct annual health screening through the Health Promotion Board's school health services. Parents can also track BMI at polyclinic visits. BMI checks every 6–12 months are recommended for children in the overweight or obese category." },
         ]}
         breadcrumbs={[
           { name: "Home", url: "https://www.bmicalculatorsingapore.com" },

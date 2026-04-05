@@ -31,6 +31,16 @@ const FAQS = [
     answer:
       "Calorie cycling — eating more on training days and less on rest days — can optimise performance and recovery for active individuals. On training days, increase carbohydrates by 50–100g to fuel and replenish glycogen. On rest days, slightly reduce calories by 100–200 kcal. However, for most Singaporeans, the simplest approach is using an average daily TDEE and eating consistently. Only advanced athletes typically benefit meaningfully from day-to-day calorie cycling.",
   },
+  {
+    question: "How many calories does an active person need?",
+    answer:
+      "An active person exercising 6–7 days per week needs 1.725× their BMR in daily calories. For a 70kg active male this is typically 2,900–3,200 kcal per day. Athletes or those in manual labor may need up to 1.9× BMR (very active multiplier).",
+  },
+  {
+    question: "Should active people eat more protein?",
+    answer:
+      "Yes. Active individuals need 1.4–2.0g of protein per kg of body weight per day according to ISSN guidelines — significantly more than the 0.8g/kg minimum for sedentary adults. Higher protein protects muscle during training and supports recovery.",
+  },
 ];
 
 export default function TDEEActivePage() {

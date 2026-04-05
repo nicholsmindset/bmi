@@ -34,6 +34,8 @@ export default function BMIMenPage() {
           { question: "At what BMI should men in Singapore be concerned?", answer: "Men with BMI ≥23.0 are considered overweight by HPB standards. At BMI ≥27.5, the health risks associated with obesity — including diabetes and heart disease — increase significantly." },
           { question: "Does BMI account for muscle mass in men?", answer: "No. BMI does not distinguish muscle from fat. Athletic men with high muscle mass may have elevated BMI without health risk. Body fat percentage is a more accurate measure for muscular individuals." },
           { question: "What is the average BMI for men in Singapore?", answer: "The average BMI for adult men in Singapore is approximately 23.6, placing the average Singaporean man in the overweight category by HPB Asian standards." },
+          { question: "What is a healthy BMI for men in Singapore?", answer: "A healthy BMI for adult men in Singapore is 18.5–22.9 under HPB Asian standards. BMI 23.0–27.4 is overweight and 27.5 or above is obese. Men with normal BMI but high waist circumference (above 90cm) may still carry elevated cardiovascular risk." },
+          { question: "Does BMI differ for men vs women?", answer: "The BMI formula is the same for men and women, but body composition differs. Men typically carry more muscle mass, which can push BMI slightly higher without reflecting excess fat. Body fat percentage testing provides a more accurate picture for muscular men." },
         ]}
         breadcrumbs={[
           { name: "Home", url: "https://www.bmicalculatorsingapore.com" },

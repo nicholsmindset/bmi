@@ -34,6 +34,8 @@ export default function BMIWomenPage() {
           { question: "What BMI is considered underweight for women?", answer: "A BMI below 18.5 is considered underweight. For women, this can be associated with nutrient deficiencies, hormonal disruption, and reduced bone density." },
           { question: "Is BMI accurate for women?", answer: "BMI is a useful screening tool but has limitations for women. It doesn't distinguish fat from lean mass and may underestimate health risks for women with low muscle mass and high body fat at 'normal' BMI." },
           { question: "What BMI is ideal for a woman to get pregnant?", answer: "HPB recommends a BMI of 18.5–22.9 before pregnancy. Both underweight (BMI <18.5) and overweight (BMI ≥23.0) status can affect fertility and pregnancy outcomes." },
+          { question: "What is a healthy BMI for women in Singapore?", answer: "A healthy BMI for adult women in Singapore is 18.5–22.9 under HPB Asian standards. BMI 23.0 or above is overweight. Women naturally carry more body fat than men at the same BMI, and postmenopausal women tend to accumulate more abdominal fat even with stable BMI." },
+          { question: "How does pregnancy affect BMI?", answer: "BMI is not an accurate health measure during pregnancy due to normal weight gain from the baby, placenta, and fluid. Singapore MOH recommends gestational weight gain of 11.5–16kg for women with pre-pregnancy BMI 18.5–22.9." },
         ]}
         breadcrumbs={[
           { name: "Home", url: "https://www.bmicalculatorsingapore.com" },

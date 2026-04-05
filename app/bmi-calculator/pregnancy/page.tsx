@@ -34,6 +34,8 @@ export default function BMIPregnancyPage() {
           { question: "What BMI is recommended before pregnancy?", answer: "HPB recommends a pre-pregnancy BMI of 18.5–22.9 for Asian women. Both underweight and overweight status can affect fertility and pregnancy outcomes." },
           { question: "How much weight should I gain during pregnancy?", answer: "Recommended gestational weight gain depends on your pre-pregnancy BMI. Underweight: 12.5–18kg, normal weight: 11.5–16kg, overweight: 7–11.5kg, obese: 5–9kg." },
           { question: "Is BMI used to monitor weight during pregnancy?", answer: "No. During pregnancy, your obstetrician monitors gestational weight gain rather than BMI. Enter your pre-pregnancy weight to use this calculator meaningfully." },
+          { question: "What is a healthy weight gain during pregnancy in Singapore?", answer: "Singapore MOH recommends gestational weight gain based on pre-pregnancy BMI: 12.5–18kg for underweight (BMI below 18.5), 11.5–16kg for healthy weight (BMI 18.5–22.9), 7–11.5kg for overweight (BMI 23–27.4), and 5–9kg for obese (BMI 27.5 and above)." },
+          { question: "When can I use a BMI calculator after pregnancy?", answer: "Standard BMI calculators are accurate for non-pregnant adults. After delivery, most women retain some weight beyond pre-pregnancy levels. HPB recommends returning to a healthy BMI within 6–12 months postpartum through gradual diet adjustment and safe exercise, not rapid weight loss." },
         ]}
         breadcrumbs={[
           { name: "Home", url: "https://www.bmicalculatorsingapore.com" },

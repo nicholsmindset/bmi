@@ -31,6 +31,16 @@ const FAQS = [
     answer:
       "Track your weight daily for 2–3 weeks. If weight stays within ±0.5 kg of your starting weight, your intake is close to true maintenance. If you are consistently gaining, reduce by 100–150 kcal/day. If consistently losing, add 100–150 kcal/day. Body weight fluctuates daily due to water, sodium, and digestion — use a weekly average rather than a single daily weigh-in for accuracy.",
   },
+  {
+    question: "How do I find my maintenance macros?",
+    answer:
+      "Maintenance macros match your TDEE with a balanced split: typically 30% protein, 40% carbs, 30% fat. For a 2,000 kcal maintenance: 150g protein, 200g carbs, 67g fat. Adjust protein higher (up to 35%) if you exercise regularly.",
+  },
+  {
+    question: "How long should I eat at maintenance?",
+    answer:
+      "Maintenance eating is ideal between cutting and bulking phases (2–4 weeks minimum) to reset hormones, metabolism, and adherence. Long-term maintenance eating at TDEE prevents metabolic adaptation and is the healthiest long-term nutrition strategy for most adults.",
+  },
 ];
 
 export default function MacroMaintenancePage() {

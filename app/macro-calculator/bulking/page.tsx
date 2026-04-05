@@ -31,6 +31,16 @@ const FAQS = [
     answer:
       "A clean bulk involves eating a modest calorie surplus (200–400 kcal) from whole foods — lean proteins, complex carbohydrates, and healthy fats — to gain muscle with minimal fat. A dirty bulk involves eating anything in large quantities to maximise calorie surplus, leading to rapid weight gain but excessive fat accumulation that requires a longer cutting phase. Clean bulking is preferred by most evidence-based nutritionists and is more practical within Singapore&apos;s hawker food culture.",
   },
+  {
+    question: "What macros should I eat when bulking?",
+    answer:
+      "When bulking (building muscle), aim for 30% protein, 50% carbs, and 20% fat of daily calories. Eat 250–500 kcal above your TDEE for a lean bulk. Higher carbohydrate intake fuels training and supports muscle protein synthesis when combined with adequate protein (1.6–2.2g/kg).",
+  },
+  {
+    question: "How long should a bulking phase last?",
+    answer:
+      "A lean bulk typically lasts 3–6 months, gaining 0.5–1.0 kg of bodyweight per month (of which roughly 50% is muscle). Bulking longer without a cutting phase leads to excessive fat gain. Most natural athletes alternate 3–6 month bulking phases with 8–12 week cutting phases.",
+  },
 ];
 
 export default function MacroBulkingPage() {

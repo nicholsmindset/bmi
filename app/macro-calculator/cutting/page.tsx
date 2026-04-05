@@ -31,6 +31,16 @@ const FAQS = [
     answer:
       "ISSN guidelines recommend 1.6–2.4g of protein per kg of body weight during a cutting phase to maximise muscle retention. A 70 kg person should aim for 112–168g of protein daily. This is higher than maintenance recommendations precisely because the calorie deficit creates conditions for muscle breakdown — protein intake compensates. Spread intake across 3–4 meals for best muscle protein synthesis throughout the day.",
   },
+  {
+    question: "What macros should I eat when cutting?",
+    answer:
+      "When cutting (losing fat), aim for 40% protein, 30% carbs, and 30% fat of daily calories. High protein (1.6–2.2g/kg body weight) is critical to preserve muscle mass during a calorie deficit. Reduce carbs rather than protein when creating a deficit.",
+  },
+  {
+    question: "How long should a cutting phase last?",
+    answer:
+      "A cutting phase typically lasts 8–16 weeks, losing 0.5–1.0 kg per week at a 500–750 kcal daily deficit. Cutting longer than 16 weeks increases the risk of muscle loss, metabolic adaptation, and hormonal disruption. A diet break or maintenance phase is recommended after 12 weeks.",
+  },
 ];
 
 export default function MacroCuttingPage() {

@@ -31,6 +31,16 @@ const FAQS = [
     answer:
       "Singapore offers excellent protein options at hawker centres: chicken rice (35g protein per serving), fish soup (25g), bee hoon soup with fish (20g), and tofu (15g per block). For supplementation, whey protein isolate provides 25–30g per serving and is widely available on iHerb, Lazada, and Shopee. Local options include eggs (6g each), tempeh (10g per 100g), and canned tuna (25g per 100g). Protein spread across the day from these whole food sources is ideal.",
   },
+  {
+    question: "How much protein do I need to build muscle?",
+    answer:
+      "To build muscle, consume 1.6–2.2g of protein per kg of body weight per day according to ISSN guidelines. For a 70kg person this is 112–154g of protein daily. Distribute intake across 3–5 meals (30–40g per meal) to maximise muscle protein synthesis.",
+  },
+  {
+    question: "What protein sources are best for muscle gain in Singapore?",
+    answer:
+      "The best muscle-building protein sources available in Singapore include chicken breast (31g per 100g), canned tuna (26g per 100g), eggs (6g per egg), Greek yogurt (10g per 100g), and tofu (8g per 100g). Whey protein supplements from iHerb or Lazada provide a convenient 20–25g per serving.",
+  },
 ];
 
 const HAWKER_PROTEIN = [
