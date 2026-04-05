@@ -2,7 +2,6 @@ import type { Metadata } from "next";
 import CalculatorSection from "@/components/ui/CalculatorSection";
 import MedicalDisclaimer from "@/components/ui/MedicalDisclaimer";
 import CalculatorSchema from "@/components/seo/CalculatorSchema";
-import AdUnit from "@/components/ui/AdUnit";
 import RelatedCalculators from "@/components/ui/RelatedCalculators";
 import CholesterolClient from "@/components/calculators/CholesterolClient";
 
@@ -110,21 +109,7 @@ export default function CholesterolCalculatorPage() {
         </div>
       </CalculatorSection>
 
-      {/* Ad unit 1 */}
-      <div className="max-w-3xl mx-auto px-4 mt-6">
-        <AdUnit
-          format="leaderboard"
-          slot={process.env.NEXT_PUBLIC_ADSENSE_SLOT_LEADERBOARD ?? "PLACEHOLDER"}
-          className="mx-auto"
-        />
-      </div>
-
       <section className="max-w-3xl mx-auto px-4 mt-12 space-y-8 pb-16">
-        <AdUnit
-          format="responsive"
-          slot={process.env.NEXT_PUBLIC_ADSENSE_SLOT_RESPONSIVE ?? "PLACEHOLDER"}
-        />
-
         {/* TC/HDL Risk Reference Table */}
         <div>
           <h2

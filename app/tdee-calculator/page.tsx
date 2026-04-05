@@ -1,9 +1,9 @@
 import type { Metadata } from "next";
 import CalculatorSection from "@/components/ui/CalculatorSection";
 import CalculatorSchema from "@/components/seo/CalculatorSchema";
-import AdUnit from "@/components/ui/AdUnit";
 import RelatedCalculators from "@/components/ui/RelatedCalculators";
 import TDEECalculatorClient from "@/components/calculators/TDEECalculatorClient";
+import QuickAnswer from "@/components/ui/QuickAnswer";
 
 export const metadata: Metadata = {
   title: "TDEE Calculator Singapore — Total Daily Energy Expenditure",
@@ -94,6 +94,16 @@ export default function TDEEPage() {
           { name: "TDEE Calculator", url: "https://www.bmicalculatorsingapore.com/tdee-calculator" },
         ]}
         isMedical
+        howToSteps={[
+          { name: "Enter your height and weight", text: "Enter your measurements in metric or imperial units." },
+          { name: "Enter your age and sex", text: "Used to calculate your Basal Metabolic Rate (BMR) via the Mifflin-St Jeor equation." },
+          { name: "Select your activity level", text: "Choose from sedentary (desk job, no exercise) to very active (hard exercise 6–7 days/week)." },
+          { name: "Set your goal", text: "Choose lose weight, maintain, or gain muscle. The calculator adjusts your calorie target accordingly." },
+        ]}
+        citations={[
+          { name: "Mifflin-St Jeor Equation — Validation Study", url: "https://pubmed.ncbi.nlm.nih.gov/2305711/" },
+          { name: "Health Promotion Board — Physical Activity", url: "https://www.healthhub.sg/live-healthy/active-lifestyle" },
+        ]}
       />
 
       <CalculatorSection
@@ -101,16 +111,17 @@ export default function TDEEPage() {
         title="TDEE Calculator"
         description="Total Daily Energy Expenditure — the exact number of calories your body burns each day. Set your goal to see your personalised calorie target for weight loss, maintenance, or muscle gain."
       >
+        <QuickAnswer
+          answer="TDEE (Total Daily Energy Expenditure) is the total calories your body burns per day. It equals your BMR multiplied by your activity level."
+          bullets={[
+            "Sedentary (desk job, no exercise): BMR × 1.2 · Moderately active: BMR × 1.55",
+            "A 70 kg moderately active Singaporean burns approximately 2,170 kcal/day",
+            "To lose weight: eat 500 kcal below TDEE · To gain muscle: eat 250–300 kcal above TDEE",
+          ]}
+          source="Mifflin-St Jeor Equation · Health Promotion Board (HPB) Singapore"
+        />
         <TDEECalculatorClient />
       </CalculatorSection>
-
-      <div className="max-w-3xl mx-auto px-4 mt-6">
-        <AdUnit
-          format="leaderboard"
-          slot={process.env.NEXT_PUBLIC_ADSENSE_SLOT_LEADERBOARD ?? "PLACEHOLDER"}
-          className="mx-auto"
-        />
-      </div>
 
       <section className="max-w-3xl mx-auto px-4 mt-12 pb-16 space-y-10">
         {/* What is TDEE */}
@@ -286,11 +297,6 @@ export default function TDEEPage() {
             ))}
           </div>
         </div>
-
-        <AdUnit
-          format="responsive"
-          slot={process.env.NEXT_PUBLIC_ADSENSE_SLOT_RESPONSIVE ?? "PLACEHOLDER"}
-        />
 
         {/* FAQ */}
         <div>

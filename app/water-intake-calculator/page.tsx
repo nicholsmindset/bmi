@@ -1,9 +1,9 @@
 import type { Metadata } from "next";
 import CalculatorSection from "@/components/ui/CalculatorSection";
 import CalculatorSchema from "@/components/seo/CalculatorSchema";
-import AdUnit from "@/components/ui/AdUnit";
 import RelatedCalculators from "@/components/ui/RelatedCalculators";
 import WaterIntakeClient from "@/components/calculators/WaterIntakeClient";
+import QuickAnswer from "@/components/ui/QuickAnswer";
 
 export const metadata: Metadata = {
   title: "Water Intake Calculator Singapore — Daily Hydration Target",
@@ -87,6 +87,16 @@ export default function WaterIntakeCalculatorPage() {
           { name: "Home", url: "https://www.bmicalculatorsingapore.com" },
           { name: "Water Intake Calculator", url: "https://www.bmicalculatorsingapore.com/water-intake-calculator" },
         ]}
+        howToSteps={[
+          { name: "Enter your weight", text: "Enter your weight in kilograms or pounds." },
+          { name: "Select your activity level", text: "Choose your typical daily activity level — from sedentary to very active." },
+          { name: "Set Singapore climate mode", text: "The calculator automatically adjusts for Singapore's tropical 30°C heat and 80% humidity." },
+          { name: "Read your daily hydration target", text: "Your personalised daily water intake in litres is shown, plus adjustments for exercise hours." },
+        ]}
+        citations={[
+          { name: "Health Promotion Board — Hydration and Water Intake", url: "https://www.healthhub.sg/live-healthy/hydration" },
+          { name: "WHO — Water and Sanitation for Health", url: "https://www.who.int/health-topics/water-sanitation-and-hygiene-wash" },
+        ]}
       />
 
       <CalculatorSection
@@ -94,16 +104,17 @@ export default function WaterIntakeCalculatorPage() {
         title="Water Intake Calculator"
         description="Singapore's 30°C heat and 80% humidity means you need more water than international guidelines suggest. This calculator adjusts your daily hydration target for tropical climate, body weight, and exercise."
       >
+        <QuickAnswer
+          answer="In Singapore's tropical climate (30°C, 80% humidity), adults should drink 2.0–2.5 litres of water per day, more during exercise."
+          bullets={[
+            "General baseline: 35 ml per kg of body weight · Active adults: 40 ml/kg",
+            "Add 500 ml per hour of moderate exercise in Singapore's heat",
+            "Coffee and tea count toward hydration despite mild diuretic effects",
+          ]}
+          source="Health Promotion Board (HPB) Singapore · WHO Hydration Guidelines"
+        />
         <WaterIntakeClient />
       </CalculatorSection>
-
-      <div className="max-w-3xl mx-auto px-4 mt-6">
-        <AdUnit
-          format="leaderboard"
-          slot={process.env.NEXT_PUBLIC_ADSENSE_SLOT_LEADERBOARD ?? "PLACEHOLDER"}
-          className="mx-auto"
-        />
-      </div>
 
       <section className="max-w-3xl mx-auto px-4 mt-12 space-y-8 pb-16">
         {/* Why Singaporeans Need More Water */}
@@ -194,11 +205,6 @@ export default function WaterIntakeCalculatorPage() {
             </ul>
           </div>
         </div>
-
-        <AdUnit
-          format="responsive"
-          slot={process.env.NEXT_PUBLIC_ADSENSE_SLOT_RESPONSIVE ?? "PLACEHOLDER"}
-        />
 
         {/* Hydration quick reference */}
         <div>

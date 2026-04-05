@@ -1,9 +1,9 @@
 import type { Metadata } from "next";
 import CalculatorSection from "@/components/ui/CalculatorSection";
 import CalculatorSchema from "@/components/seo/CalculatorSchema";
-import AdUnit from "@/components/ui/AdUnit";
 import RelatedCalculators from "@/components/ui/RelatedCalculators";
 import IdealWeightClient from "@/components/calculators/IdealWeightClient";
+import QuickAnswer from "@/components/ui/QuickAnswer";
 
 export const metadata: Metadata = {
   title: "Ideal Weight Calculator Singapore — HPB Healthy Weight Range",
@@ -109,6 +109,15 @@ export default function IdealWeightPage() {
           { name: "Ideal Weight Calculator", url: "https://www.bmicalculatorsingapore.com/ideal-weight-calculator" },
         ]}
         isMedical
+        howToSteps={[
+          { name: "Enter your height", text: "Enter your height in centimetres or feet and inches." },
+          { name: "Select your sex", text: "The Hamwi formula uses sex-specific calculations for ideal weight." },
+          { name: "Choose your standard", text: "Select HPB Asian (BMI 18.5–22.9) or WHO (BMI 18.5–24.9) to see the healthy weight range for your height." },
+          { name: "Compare your results", text: "See the Hamwi ideal weight and the HPB healthy weight range side by side." },
+        ]}
+        citations={[
+          { name: "Health Promotion Board — Healthy Weight for Singaporeans", url: "https://www.healthhub.sg/live-healthy/ideal-weight" },
+        ]}
       />
 
       <CalculatorSection
@@ -116,16 +125,17 @@ export default function IdealWeightPage() {
         title="Ideal Weight Calculator"
         description="Find your ideal weight using Singapore HPB healthy BMI range and the Hamwi formula. Compare Asian (BMI 18.5–22.9) vs WHO (18.5–24.9) healthy weight ranges for your height."
       >
+        <QuickAnswer
+          answer="The HPB healthy weight range for a 165 cm adult is 50.4–62.4 kg. This uses a BMI of 18.5–22.9 — lower than the WHO's 25.0 cutoff for Asian populations."
+          bullets={[
+            "HPB Asian standard: BMI 18.5–22.9 · WHO global standard: BMI 18.5–24.9",
+            "A 160 cm woman: healthy weight 47.4–58.6 kg (HPB) vs 47.4–64.0 kg (WHO)",
+            "Ideal weight by HPB is lower than WHO — Asians carry more body fat at the same BMI",
+          ]}
+          source="Health Promotion Board (HPB) Singapore · Hamwi Formula"
+        />
         <IdealWeightClient />
       </CalculatorSection>
-
-      <div className="max-w-3xl mx-auto px-4 mt-6">
-        <AdUnit
-          format="leaderboard"
-          slot={process.env.NEXT_PUBLIC_ADSENSE_SLOT_LEADERBOARD ?? "PLACEHOLDER"}
-          className="mx-auto"
-        />
-      </div>
 
       <section className="max-w-3xl mx-auto px-4 mt-12 pb-16 space-y-10">
         {/* Why Singapore's range differs */}
@@ -295,11 +305,6 @@ export default function IdealWeightPage() {
             the more clinically relevant measure for Singapore residents. Use the HPB range as your primary target.
           </p>
         </div>
-
-        <AdUnit
-          format="responsive"
-          slot={process.env.NEXT_PUBLIC_ADSENSE_SLOT_RESPONSIVE ?? "PLACEHOLDER"}
-        />
 
         {/* FAQ */}
         <div>

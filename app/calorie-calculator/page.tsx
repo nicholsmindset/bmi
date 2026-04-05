@@ -1,7 +1,6 @@
 import type { Metadata } from "next";
 import CalculatorSection from "@/components/ui/CalculatorSection";
 import CalculatorSchema from "@/components/seo/CalculatorSchema";
-import AdUnit from "@/components/ui/AdUnit";
 import RelatedCalculators from "@/components/ui/RelatedCalculators";
 import CalorieCalculatorClient from "@/components/calculators/CalorieCalculatorClient";
 
@@ -105,14 +104,6 @@ export default function CalorieCalculatorPage() {
         <CalorieCalculatorClient />
       </CalculatorSection>
 
-      <div className="max-w-3xl mx-auto px-4 mt-6">
-        <AdUnit
-          format="leaderboard"
-          slot={process.env.NEXT_PUBLIC_ADSENSE_SLOT_LEADERBOARD ?? "PLACEHOLDER"}
-          className="mx-auto"
-        />
-      </div>
-
       <section className="max-w-3xl mx-auto px-4 mt-12 space-y-8 pb-16">
         {/* Singapore HPB Daily Calorie Guidelines */}
         <div>
@@ -181,11 +172,6 @@ export default function CalorieCalculatorPage() {
             Adjust ±200–400 kcal for sedentary or very active lifestyles.
           </p>
         </div>
-
-        <AdUnit
-          format="responsive"
-          slot={process.env.NEXT_PUBLIC_ADSENSE_SLOT_RESPONSIVE ?? "PLACEHOLDER"}
-        />
 
         {/* Singapore Hawker Food Calorie Guide */}
         <div>

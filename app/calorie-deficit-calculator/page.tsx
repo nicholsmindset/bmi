@@ -2,9 +2,10 @@ import type { Metadata } from "next";
 import CalculatorSection from "@/components/ui/CalculatorSection";
 import MedicalDisclaimer from "@/components/ui/MedicalDisclaimer";
 import CalculatorSchema from "@/components/seo/CalculatorSchema";
-import AdUnit from "@/components/ui/AdUnit";
 import RelatedCalculators from "@/components/ui/RelatedCalculators";
 import CalorieDeficitClient from "@/components/calculators/CalorieDeficitClient";
+import Link from "next/link";
+import QuickAnswer from "@/components/ui/QuickAnswer";
 
 export const metadata: Metadata = {
   title: "Calorie Deficit Calculator Singapore — Safe Weight Loss Calories",
@@ -91,6 +92,17 @@ export default function CalorieDeficitPage() {
           { name: "Calorie Deficit Calculator", url: "https://www.bmicalculatorsingapore.com/calorie-deficit-calculator" },
         ]}
         isMedical
+        howToSteps={[
+          { name: "Enter your current weight", text: "Enter your current weight in kilograms or pounds." },
+          { name: "Enter your target weight", text: "Enter your goal weight. The calculator will determine the gap and timeline." },
+          { name: "Enter height, age, and sex", text: "These are used to calculate your BMR using the Mifflin-St Jeor equation." },
+          { name: "Select your activity level", text: "Choose your typical daily activity level to determine your TDEE." },
+          { name: "Choose your weekly loss goal", text: "Select 0.25–1.0 kg per week. The calculator shows your daily calorie target and weeks to goal." },
+        ]}
+        citations={[
+          { name: "Health Promotion Board — Healthy Weight", url: "https://www.healthhub.sg/live-healthy/ideal-weight" },
+          { name: "Mifflin-St Jeor Equation — Accuracy for Asian Populations", url: "https://pubmed.ncbi.nlm.nih.gov/2305711/" },
+        ]}
       />
 
       <CalculatorSection
@@ -98,13 +110,18 @@ export default function CalorieDeficitPage() {
         title="Calorie Deficit Calculator"
         description="Enter your current weight, target weight, and activity level to find your daily calorie target, deficit, and how many weeks it will take to reach your goal."
       >
+        <QuickAnswer
+          answer="A safe calorie deficit for weight loss is 500–750 kcal/day, producing 0.5–0.75 kg loss per week. Singapore HPB recommends a minimum of 1,200 kcal/day (women) and 1,500 kcal/day (men)."
+          bullets={[
+            "1 kg of fat = approx. 7,700 kcal — a 550 kcal/day deficit loses ~0.5 kg/week",
+            "Never go below 1,200 kcal/day (women) or 1,500 kcal/day (men) — HPB safe floor",
+            "Lose no more than 0.5–1.0 kg per week to preserve muscle mass",
+          ]}
+          source="Health Promotion Board (HPB) Singapore"
+        />
         <CalorieDeficitClient />
         <div className="mt-6"><MedicalDisclaimer context="calorie-deficit" /></div>
       </CalculatorSection>
-
-      <div className="max-w-3xl mx-auto px-4 mt-6">
-        <AdUnit format="leaderboard" slot={process.env.NEXT_PUBLIC_ADSENSE_SLOT_LEADERBOARD ?? "PLACEHOLDER"} className="mx-auto" />
-      </div>
 
       <section className="max-w-3xl mx-auto px-4 mt-12 space-y-8">
         {/* HPB context */}
@@ -114,13 +131,20 @@ export default function CalorieDeficitPage() {
           </h2>
           <div className="space-y-4 text-base" style={{ color: "var(--color-on-surface-variant)" }}>
             <p>
-              A calorie deficit means consuming fewer calories than your body burns. Your <strong>Total Daily Energy Expenditure (TDEE)</strong> is
-              calculated using the <strong>Mifflin-St Jeor equation</strong> — the most accurate BMR formula for Asian populations — multiplied by
-              your activity level.
+              A calorie deficit means consuming fewer calories than your body burns. Your{" "}
+              <Link href="/tdee-calculator" style={{ color: "var(--color-primary)", textDecoration: "underline" }}>Total Daily Energy Expenditure (TDEE)</Link>{" "}
+              is calculated using the <strong>Mifflin-St Jeor equation</strong> — the most accurate BMR formula for Asian populations — multiplied by
+              your activity level. If you only want to find your base metabolic rate, use the{" "}
+              <Link href="/bmr-calculator" style={{ color: "var(--color-primary)", textDecoration: "underline" }}>BMR Calculator</Link>.
             </p>
             <p>
               <strong>1 kg of body fat ≈ 7,700 kcal.</strong> To lose 0.5 kg/week, you need a 550 kcal daily deficit.
               To lose 1.0 kg/week (the maximum recommended by HPB), you need approximately 1,100 kcal deficit per day.
+              Once you have your daily calorie target, use the{" "}
+              <Link href="/macro-calculator" style={{ color: "var(--color-primary)", textDecoration: "underline" }}>Macro Calculator</Link>{" "}
+              to break it into protein, carbs, and fat. Use the{" "}
+              <Link href="/protein-calculator" style={{ color: "var(--color-primary)", textDecoration: "underline" }}>Protein Calculator</Link>{" "}
+              to protect muscle mass while in a deficit.
             </p>
           </div>
         </div>
@@ -165,7 +189,6 @@ export default function CalorieDeficitPage() {
           </p>
         </div>
 
-        <AdUnit format="responsive" slot={process.env.NEXT_PUBLIC_ADSENSE_SLOT_RESPONSIVE ?? "PLACEHOLDER"} />
 
         {/* FAQ */}
         <div>

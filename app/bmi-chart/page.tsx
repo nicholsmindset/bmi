@@ -1,7 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import CalculatorSchema from "@/components/seo/CalculatorSchema";
-import AdUnit from "@/components/ui/AdUnit";
 
 export const metadata: Metadata = {
   title: "BMI Chart Singapore — HPB Asian & WHO BMI Ranges",
@@ -214,15 +213,6 @@ export default function BMIChartPage() {
           </div>
         </div>
 
-        {/* Ad unit 1 */}
-        <div className="my-8">
-          <AdUnit
-            format="leaderboard"
-            slot={process.env.NEXT_PUBLIC_ADSENSE_SLOT_LEADERBOARD ?? "PLACEHOLDER"}
-            className="mx-auto"
-          />
-        </div>
-
         {/* Weight ranges by height */}
         <div className="mb-10">
           <h2
@@ -369,15 +359,6 @@ export default function BMIChartPage() {
               have elevated BMI despite having healthy body composition.
             </p>
           </div>
-        </div>
-
-        {/* Ad unit 2 */}
-        <div className="my-8">
-          <AdUnit
-            format="responsive"
-            slot={process.env.NEXT_PUBLIC_ADSENSE_SLOT_RESPONSIVE ?? "PLACEHOLDER"}
-            className="mx-auto"
-          />
         </div>
 
         {/* FAQ section */}

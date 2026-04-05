@@ -4,7 +4,8 @@ import MedicalDisclaimer from "@/components/ui/MedicalDisclaimer";
 import RelatedCalculators from "@/components/ui/RelatedCalculators";
 import CalculatorSchema from "@/components/seo/CalculatorSchema";
 import BMICalculatorClient from "@/components/calculators/BMICalculatorClient";
-import AdUnit from "@/components/ui/AdUnit";
+import QuickAnswer from "@/components/ui/QuickAnswer";
+import Link from "next/link";
 
 export const metadata: Metadata = {
   title: "BMI Calculator Singapore — Free HPB Asian Standard",
@@ -95,6 +96,16 @@ export default function BMICalculatorPage() {
           { name: "BMI Calculator", url: "https://www.bmicalculatorsingapore.com/bmi-calculator" },
         ]}
         isMedical
+        howToSteps={[
+          { name: "Enter your height", text: "Enter your height in centimetres or feet and inches using the unit toggle." },
+          { name: "Enter your weight", text: "Enter your weight in kilograms or pounds." },
+          { name: "Select your standard", text: "The HPB Asian standard is selected by default for Singaporeans. Switch to WHO if needed." },
+          { name: "Read your result", text: "Your BMI score, category (Healthy/Overweight/Obese), and HPB healthy weight range appear instantly." },
+        ]}
+        citations={[
+          { name: "Health Promotion Board — Obesity", url: "https://www.healthhub.sg/live-healthy/ideal-weight" },
+          { name: "WHO — BMI Classification", url: "https://www.who.int/tools/body-mass-index-bmi-calculator" },
+        ]}
       />
 
       <CalculatorSection
@@ -102,14 +113,16 @@ export default function BMICalculatorPage() {
         title="BMI Calculator Singapore"
         description="Using Singapore's Health Promotion Board (HPB) Asian standards — the medically accurate cutoffs for Singaporeans. Overweight starts at BMI 23.0, not the WHO's 25.0."
       >
+        <QuickAnswer
+          answer="A healthy BMI in Singapore is 18.5–22.9 under HPB Asian standards. Overweight begins at 23.0 — lower than the WHO threshold of 25.0."
+          bullets={[
+            "Singapore follows HPB standards validated for Chinese, Malay, and Indian populations",
+            "Overweight: BMI 23.0–27.4 · Obese I: 27.5–32.4 · Obese II: ≥ 32.5",
+            "About 40% of Singaporeans aged 18–69 are overweight or obese by HPB definition",
+          ]}
+          source="Health Promotion Board (HPB) Singapore"
+        />
         <BMICalculatorClient />
-
-        <div className="mt-6">
-          <AdUnit
-            format="leaderboard"
-            slot={process.env.NEXT_PUBLIC_ADSENSE_SLOT_LEADERBOARD ?? "PLACEHOLDER"}
-          />
-        </div>
 
         <div className="mt-8">
           <MedicalDisclaimer context="bmi" />
@@ -123,16 +136,6 @@ export default function BMICalculatorPage() {
         className="max-w-6xl mx-auto px-4 sm:px-6 pb-16"
         style={{ color: "var(--color-on-surface)" }}
       >
-        <div
-          className="mt-8 p-6 rounded-2xl"
-          style={{ background: "var(--color-surface-low)" }}
-        >
-          <AdUnit
-            format="responsive"
-            slot={process.env.NEXT_PUBLIC_ADSENSE_SLOT_RESPONSIVE ?? "PLACEHOLDER"}
-          />
-        </div>
-
         <h2
           className="text-2xl font-bold mt-12 mb-4"
           style={{ fontFamily: "var(--font-manrope)" }}
@@ -171,6 +174,17 @@ export default function BMICalculatorPage() {
             </tbody>
           </table>
         </div>
+
+        <p className="mt-6 text-sm" style={{ color: "var(--color-on-surface-variant)" }}>
+          BMI is the starting point — not the full picture. For a deeper health assessment, use your BMI result
+          alongside your{" "}
+          <Link href="/body-fat-calculator" style={{ color: "var(--color-primary)", textDecoration: "underline" }}>body fat percentage</Link>{" "}
+          and{" "}
+          <Link href="/waist-hip-ratio-calculator" style={{ color: "var(--color-primary)", textDecoration: "underline" }}>waist-to-hip ratio</Link>{" "}
+          — both identify health risks that BMI alone can miss. To understand your calorie needs at your
+          current BMI, try the{" "}
+          <Link href="/tdee-calculator" style={{ color: "var(--color-primary)", textDecoration: "underline" }}>TDEE Calculator</Link>.
+        </p>
 
         <h2
           className="text-2xl font-bold mt-10 mb-4"

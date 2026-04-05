@@ -1,7 +1,6 @@
 import type { Metadata } from "next";
 import CalculatorSection from "@/components/ui/CalculatorSection";
 import CalculatorSchema from "@/components/seo/CalculatorSchema";
-import AdUnit from "@/components/ui/AdUnit";
 import CalorieCalculatorClient from "@/components/calculators/CalorieCalculatorClient";
 
 export const metadata: Metadata = {
@@ -88,14 +87,6 @@ export default function CalorieCalculatorSingaporePage() {
         <CalorieCalculatorClient />
       </CalculatorSection>
 
-      <div className="max-w-3xl mx-auto px-4 mt-6">
-        <AdUnit
-          format="leaderboard"
-          slot={process.env.NEXT_PUBLIC_ADSENSE_SLOT_LEADERBOARD ?? "PLACEHOLDER"}
-          className="mx-auto"
-        />
-      </div>
-
       <section className="max-w-3xl mx-auto px-4 mt-12 pb-16 space-y-10">
         {/* Singapore HPB guidelines */}
         <div>
@@ -162,11 +153,6 @@ export default function CalorieCalculatorSingaporePage() {
             Based on HPB guidelines for average-weight Singaporean adults. Use the calculator above for your personalised target.
           </p>
         </div>
-
-        <AdUnit
-          format="responsive"
-          slot={process.env.NEXT_PUBLIC_ADSENSE_SLOT_RESPONSIVE ?? "PLACEHOLDER"}
-        />
 
         {/* Hawker calories table */}
         <div>

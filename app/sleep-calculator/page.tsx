@@ -1,9 +1,9 @@
 import type { Metadata } from "next";
 import CalculatorSection from "@/components/ui/CalculatorSection";
 import CalculatorSchema from "@/components/seo/CalculatorSchema";
-import AdUnit from "@/components/ui/AdUnit";
 import RelatedCalculators from "@/components/ui/RelatedCalculators";
 import SleepCalculatorClient from "@/components/calculators/SleepCalculatorClient";
+import QuickAnswer from "@/components/ui/QuickAnswer";
 
 export const metadata: Metadata = {
   title: "Sleep Calculator Singapore — Best Bedtime & Wake Up Time",
@@ -82,6 +82,12 @@ export default function SleepCalculatorPage() {
           { name: "Home", url: "https://www.bmicalculatorsingapore.com" },
           { name: "Sleep Calculator", url: "https://www.bmicalculatorsingapore.com/sleep-calculator" },
         ]}
+        howToSteps={[
+          { name: "Choose your mode", text: "Select 'I want to wake up at' to find your ideal bedtime, or 'I plan to sleep at' to find your best wake-up time." },
+          { name: "Enter your time", text: "Enter your wake-up time or planned sleep time using the time picker." },
+          { name: "View your options", text: "The calculator shows 4 options based on 4–7 complete 90-minute sleep cycles." },
+          { name: "Choose your target", text: "Pick the option that gives you the most cycles while fitting your schedule. 5–6 cycles (7.5–9 hours) is optimal for most adults." },
+        ]}
       />
 
       <CalculatorSection
@@ -89,28 +95,19 @@ export default function SleepCalculatorPage() {
         title="Sleep Cycle Calculator"
         description="Choose a wake-up time to find your ideal bedtime, or enter when you plan to sleep to find the best time to wake up. Results are timed to complete full 90-minute sleep cycles."
       >
+        <QuickAnswer
+          answer="Adults need 7–9 hours of sleep (5–6 complete 90-minute cycles). Singapore averages 6.5 hours — among the lowest globally."
+          bullets={[
+            "Each sleep cycle is 90 minutes — waking mid-cycle causes grogginess and fatigue",
+            "Add 14 minutes to your bedtime target (average time to fall asleep)",
+            "44% of Singaporeans get less than 7 hours of sleep per night",
+          ]}
+          source="National Sleep Foundation (NSF) · Singapore Health Study"
+        />
         <SleepCalculatorClient defaultMode="bedtime" />
       </CalculatorSection>
 
-      {/* Ad unit 1 — immediately below calculator */}
-      <div className="max-w-3xl mx-auto px-4 mt-6">
-        <AdUnit
-          format="leaderboard"
-          slot={process.env.NEXT_PUBLIC_ADSENSE_SLOT_LEADERBOARD ?? "PLACEHOLDER"}
-          className="mx-auto"
-        />
-      </div>
-
       <section className="max-w-3xl mx-auto px-4 mt-12 space-y-8">
-        {/* Ad unit 2 — midpage */}
-        <div>
-          <AdUnit
-            format="rectangle"
-            slot={process.env.NEXT_PUBLIC_ADSENSE_SLOT_RECTANGLE ?? "PLACEHOLDER"}
-            className="mx-auto"
-          />
-        </div>
-
         <div>
           <h2 className="text-2xl font-bold mb-4" style={{ fontFamily: "var(--font-manrope)", color: "var(--color-on-surface)" }}>
             How Sleep Cycles Work
@@ -187,12 +184,6 @@ export default function SleepCalculatorPage() {
             ))}
           </div>
         </div>
-
-        {/* Ad unit 3 — above FAQ (sleep page only) */}
-        <AdUnit
-          format="responsive"
-          slot={process.env.NEXT_PUBLIC_ADSENSE_SLOT_RESPONSIVE ?? "PLACEHOLDER"}
-        />
 
         {/* FAQ */}
         <div>

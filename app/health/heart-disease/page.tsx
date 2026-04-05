@@ -1,7 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import CalculatorSchema from "@/components/seo/CalculatorSchema";
-import AdUnit from "@/components/ui/AdUnit";
 
 export const metadata: Metadata = {
   title: "Heart Disease Risk in Singapore — Cholesterol, Blood Pressure & Weight",
@@ -232,15 +231,6 @@ export default function HeartDiseasePage() {
               ))}
             </ul>
           </section>
-        </div>
-
-        {/* Ad unit */}
-        <div className="my-10">
-          <AdUnit
-            format="responsive"
-            slot={process.env.NEXT_PUBLIC_ADSENSE_SLOT_RESPONSIVE ?? "PLACEHOLDER"}
-            className="mx-auto"
-          />
         </div>
 
         {/* FAQ section */}

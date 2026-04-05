@@ -1,7 +1,6 @@
 import type { Metadata } from "next";
 import CalculatorSection from "@/components/ui/CalculatorSection";
 import CalculatorSchema from "@/components/seo/CalculatorSchema";
-import AdUnit from "@/components/ui/AdUnit";
 import BMRCalculatorClient from "@/components/calculators/BMRCalculatorClient";
 
 export const metadata: Metadata = {
@@ -57,14 +56,6 @@ export default function BMRWomenPage() {
       >
         <BMRCalculatorClient defaultSex="female" />
       </CalculatorSection>
-
-      <div className="max-w-3xl mx-auto px-4 mt-6">
-        <AdUnit
-          format="leaderboard"
-          slot={process.env.NEXT_PUBLIC_ADSENSE_SLOT_LEADERBOARD ?? "PLACEHOLDER"}
-          className="mx-auto"
-        />
-      </div>
 
       <section className="max-w-3xl mx-auto px-4 mt-12 pb-16 space-y-8">
         <div>

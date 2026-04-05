@@ -79,10 +79,19 @@ export default function RootLayout({
       lang="en-SG"
       className={`${manrope.variable} ${publicSans.variable} h-full`}
     >
+      <head>
+        <meta name="google-adsense-account" content="ca-pub-5441531660664467" />
+      </head>
       <body
         className="min-h-full flex flex-col"
         style={{ background: "#F7F6FF" }}
       >
+        <Script
+          async
+          src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5441531660664467"
+          crossOrigin="anonymous"
+          strategy="afterInteractive"
+        />
         {/* Header */}
         <header
           className="sticky top-0 z-50"

@@ -1,7 +1,6 @@
 import type { Metadata } from "next";
 import CalculatorSection from "@/components/ui/CalculatorSection";
 import CalculatorSchema from "@/components/seo/CalculatorSchema";
-import AdUnit from "@/components/ui/AdUnit";
 import RelatedCalculators from "@/components/ui/RelatedCalculators";
 import MacroCalculatorClient from "@/components/calculators/MacroCalculatorClient";
 
@@ -104,14 +103,6 @@ export default function MacroCalculatorPage() {
       >
         <MacroCalculatorClient />
       </CalculatorSection>
-
-      <div className="max-w-3xl mx-auto px-4 mt-6">
-        <AdUnit
-          format="leaderboard"
-          slot={process.env.NEXT_PUBLIC_ADSENSE_SLOT_LEADERBOARD ?? "PLACEHOLDER"}
-          className="mx-auto"
-        />
-      </div>
 
       <section className="max-w-3xl mx-auto px-4 mt-12 space-y-8 pb-16">
         {/* Macro Splits Reference Guide */}
@@ -303,11 +294,6 @@ export default function MacroCalculatorPage() {
             ))}
           </div>
         </div>
-
-        <AdUnit
-          format="responsive"
-          slot={process.env.NEXT_PUBLIC_ADSENSE_SLOT_RESPONSIVE ?? "PLACEHOLDER"}
-        />
 
         {/* FAQ */}
         <div>

@@ -1,9 +1,9 @@
 import type { Metadata } from "next";
 import CalculatorSection from "@/components/ui/CalculatorSection";
 import CalculatorSchema from "@/components/seo/CalculatorSchema";
-import AdUnit from "@/components/ui/AdUnit";
 import RelatedCalculators from "@/components/ui/RelatedCalculators";
 import ProteinCalculatorClient from "@/components/calculators/ProteinCalculatorClient";
+import QuickAnswer from "@/components/ui/QuickAnswer";
 import { HAWKER_PROTEIN_TABLE } from "@/lib/sg-food-data";
 
 export const metadata: Metadata = {
@@ -83,6 +83,16 @@ export default function ProteinCalculatorPage() {
           { name: "Home", url: "https://www.bmicalculatorsingapore.com" },
           { name: "Protein Calculator", url: "https://www.bmicalculatorsingapore.com/protein-calculator" },
         ]}
+        howToSteps={[
+          { name: "Enter your body weight", text: "Enter your weight in kilograms or pounds." },
+          { name: "Select your goal", text: "Choose weight loss, maintenance, muscle gain, or athletic performance." },
+          { name: "Select your activity level", text: "Choose your typical weekly activity level from sedentary to very active." },
+          { name: "Read your result", text: "Your daily protein target in grams, g/kg ratio, and per-meal breakdown (3 and 4 meals) appear instantly." },
+        ]}
+        citations={[
+          { name: "ISSN Position Stand — Protein and Exercise", url: "https://pubmed.ncbi.nlm.nih.gov/28642676/" },
+          { name: "Health Promotion Board — Nutrition", url: "https://www.healthhub.sg/live-healthy/nutrition" },
+        ]}
       />
 
       <CalculatorSection
@@ -90,16 +100,17 @@ export default function ProteinCalculatorPage() {
         title="Protein Calculator"
         description="Enter your body weight and goal to find your daily protein target. Results include a per-meal breakdown and a Singapore hawker food protein guide."
       >
+        <QuickAnswer
+          answer="Most adults need 0.8–1.6 g of protein per kg of body weight per day. Athletes and those building muscle need 1.6–2.2 g/kg."
+          bullets={[
+            "General health: 0.8–1.2 g/kg · Weight loss: 1.2–1.6 g/kg · Muscle gain: 1.6–2.2 g/kg",
+            "A 65 kg person building muscle needs 104–143 g of protein daily",
+            "Chicken rice (~35 g), fish soup (~25 g), tofu (~15 g) — hawker meals can supply 25–40 g",
+          ]}
+          source="International Society of Sports Nutrition (ISSN) · HPB Singapore"
+        />
         <ProteinCalculatorClient />
       </CalculatorSection>
-
-      <div className="max-w-3xl mx-auto px-4 mt-6">
-        <AdUnit
-          format="leaderboard"
-          slot={process.env.NEXT_PUBLIC_ADSENSE_SLOT_LEADERBOARD ?? "PLACEHOLDER"}
-          className="mx-auto"
-        />
-      </div>
 
       <section className="max-w-3xl mx-auto px-4 mt-12 space-y-8">
         <div>
@@ -169,8 +180,6 @@ export default function ProteinCalculatorPage() {
             Sources: HPB Energy &amp; Nutrient Composition of Food, Singapore Food Agency. Values are estimates — portions vary by stall.
           </p>
         </div>
-
-        <AdUnit format="responsive" slot={process.env.NEXT_PUBLIC_ADSENSE_SLOT_RESPONSIVE ?? "PLACEHOLDER"} />
 
         <div>
           <h2 className="text-2xl font-bold mb-4" style={{ fontFamily: "var(--font-manrope)", color: "var(--color-on-surface)" }}>

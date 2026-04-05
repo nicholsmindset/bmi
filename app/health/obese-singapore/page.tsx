@@ -1,7 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import CalculatorSchema from "@/components/seo/CalculatorSchema";
-import AdUnit from "@/components/ui/AdUnit";
 
 export const metadata: Metadata = {
   title: "Obesity in Singapore — Rates, HPB Threshold BMI 27.5 & Treatment",
@@ -299,14 +298,7 @@ export default function ObeseSingaporePage() {
           </section>
         </div>
 
-        {/* Ad unit */}
-        <div className="my-10">
-          <AdUnit
-            format="responsive"
-            slot={process.env.NEXT_PUBLIC_ADSENSE_SLOT_RESPONSIVE ?? "PLACEHOLDER"}
-            className="mx-auto"
-          />
-        </div>
+
 
         {/* FAQ section */}
         <div className="mb-10">

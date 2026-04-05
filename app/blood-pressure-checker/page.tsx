@@ -2,8 +2,9 @@ import type { Metadata } from "next";
 import CalculatorSection from "@/components/ui/CalculatorSection";
 import MedicalDisclaimer from "@/components/ui/MedicalDisclaimer";
 import CalculatorSchema from "@/components/seo/CalculatorSchema";
-import AdUnit from "@/components/ui/AdUnit";
 import BloodPressureClient from "@/components/calculators/BloodPressureClient";
+import Link from "next/link";
+import QuickAnswer from "@/components/ui/QuickAnswer";
 
 export const metadata: Metadata = {
   title: "Blood Pressure Checker Singapore — BP Categories & Chart",
@@ -59,6 +60,16 @@ export default function BloodPressurePage() {
           { name: "Blood Pressure Checker", url: "https://www.bmicalculatorsingapore.com/blood-pressure-checker" },
         ]}
         isMedical
+        howToSteps={[
+          { name: "Enter your systolic reading", text: "Enter the top number from your blood pressure reading (pressure when your heart beats)." },
+          { name: "Enter your diastolic reading", text: "Enter the bottom number (pressure between heartbeats)." },
+          { name: "Check your category", text: "Your reading is classified against Singapore MOH and JNC8 categories: Normal, Elevated, Stage 1 or Stage 2 hypertension." },
+          { name: "Read the guidance", text: "For Stage 1 or Stage 2 readings, consult your GP or polyclinic. Do not self-diagnose based on a single reading." },
+        ]}
+        citations={[
+          { name: "Singapore MOH Clinical Practice Guidelines — Hypertension", url: "https://www.moh.gov.sg/guidelines-and-standards/cpg/hypertension" },
+          { name: "JNC8 Hypertension Guidelines", url: "https://pubmed.ncbi.nlm.nih.gov/24352797/" },
+        ]}
       />
 
       <CalculatorSection
@@ -66,25 +77,20 @@ export default function BloodPressurePage() {
         title="Blood Pressure Checker"
         description="Enter your systolic (top) and diastolic (bottom) blood pressure readings to see your category according to Singapore MOH and JNC8 guidelines."
       >
+        <QuickAnswer
+          answer="Normal blood pressure is below 120/80 mmHg. Singapore MOH classifies ≥ 140/90 mmHg as Stage 2 hypertension requiring medical evaluation."
+          bullets={[
+            "Normal: < 120/80 · Elevated: 120–129/< 80 · Stage 1: 130–139/80–89",
+            "35% of Singaporeans have hypertension — over half are undiagnosed",
+            "A single high reading is not a diagnosis — measure on 2+ separate occasions",
+          ]}
+          source="Singapore Ministry of Health (MOH) · JNC8 Guidelines"
+        />
         <BloodPressureClient />
         <div className="mt-6"><MedicalDisclaimer context="blood-pressure" /></div>
       </CalculatorSection>
 
-      {/* Ad unit 1 */}
-      <div className="max-w-3xl mx-auto px-4 mt-6">
-        <AdUnit
-          format="leaderboard"
-          slot={process.env.NEXT_PUBLIC_ADSENSE_SLOT_LEADERBOARD ?? "PLACEHOLDER"}
-          className="mx-auto"
-        />
-      </div>
-
       <section className="max-w-3xl mx-auto px-4 mt-12 pb-16 space-y-6">
-        {/* Ad unit 2 — high RPM page gets 2 */}
-        <AdUnit
-          format="responsive"
-          slot={process.env.NEXT_PUBLIC_ADSENSE_SLOT_RESPONSIVE ?? "PLACEHOLDER"}
-        />
 
         <div>
           <h2 className="text-2xl font-bold mb-4" style={{ fontFamily: "var(--font-manrope)", color: "var(--color-on-surface)" }}>
@@ -99,6 +105,13 @@ export default function BloodPressurePage() {
             <p>
               A single high reading does not diagnose hypertension. Blood pressure naturally varies throughout the day.
               A diagnosis of hypertension requires elevated readings on at least two separate occasions, confirmed by a doctor.
+            </p>
+            <p>
+              High blood pressure is strongly linked to excess weight — use the{" "}
+              <Link href="/bmi-calculator" style={{ color: "var(--color-primary)", textDecoration: "underline" }}>BMI Calculator</Link>{" "}
+              to check your weight status. Central obesity, measured by{" "}
+              <Link href="/waist-hip-ratio-calculator" style={{ color: "var(--color-primary)", textDecoration: "underline" }}>waist-to-hip ratio</Link>,{" "}
+              is a key independent risk factor for hypertension in Asian populations.
             </p>
           </div>
         </div>

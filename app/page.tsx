@@ -1,7 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import BMICalculatorClient from "@/components/calculators/BMICalculatorClient";
-import AdUnit from "@/components/ui/AdUnit";
 
 export const metadata: Metadata = {
   title: "15 Free Singapore Health Calculators — BMI, Calories, Sleep & More",
@@ -147,15 +146,6 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* Ad */}
-      <div className="max-w-4xl mx-auto px-4 sm:px-6 py-6">
-        <AdUnit
-          format="leaderboard"
-          slot={process.env.NEXT_PUBLIC_ADSENSE_SLOT_LEADERBOARD ?? "PLACEHOLDER"}
-          className="mx-auto"
-        />
-      </div>
-
       {/* Calculator Directory */}
       <section className="max-w-6xl mx-auto px-4 sm:px-6 py-10">
         <h2
@@ -252,14 +242,6 @@ export default function HomePage() {
           ))}
         </div>
       </section>
-
-      {/* Ad mid-page */}
-      <div className="max-w-4xl mx-auto px-4 sm:px-6 py-4">
-        <AdUnit
-          format="responsive"
-          slot={process.env.NEXT_PUBLIC_ADSENSE_SLOT_RESPONSIVE ?? "PLACEHOLDER"}
-        />
-      </div>
 
       {/* Singapore Health Stats */}
       <section style={{ borderTop: "1px solid var(--color-outline-variant)" }}>

@@ -8,6 +8,16 @@ interface Breadcrumb {
   url: string;
 }
 
+interface HowToStep {
+  name: string;
+  text: string;
+}
+
+interface Citation {
+  name: string;
+  url: string;
+}
+
 interface CalculatorSchemaProps {
   name: string;
   description: string;
@@ -16,6 +26,8 @@ interface CalculatorSchemaProps {
   faqs: FAQ[];
   breadcrumbs: Breadcrumb[];
   isMedical?: boolean;
+  howToSteps?: HowToStep[];
+  citations?: Citation[];
 }
 
 export default function CalculatorSchema({
@@ -26,6 +38,8 @@ export default function CalculatorSchema({
   faqs,
   breadcrumbs,
   isMedical = false,
+  howToSteps,
+  citations,
 }: CalculatorSchemaProps) {
   const mainEntity = isMedical
     ? {
@@ -34,10 +48,29 @@ export default function CalculatorSchema({
         description,
         url,
         lastReviewed,
+        author: {
+          "@type": "Organization",
+          name: "BMI Calculator Singapore",
+          url: "https://www.bmicalculatorsingapore.com",
+        },
         reviewedBy: {
           "@type": "Organization",
-          name: "bmicalculator.sg",
+          name: "BMI Calculator Singapore",
+          url: "https://www.bmicalculatorsingapore.com",
         },
+        medicalAudience: {
+          "@type": "MedicalAudience",
+          audienceType: "Patient",
+        },
+        ...(citations && citations.length > 0
+          ? {
+              citation: citations.map((c) => ({
+                "@type": "CreativeWork",
+                name: c.name,
+                url: c.url,
+              })),
+            }
+          : {}),
       }
     : {
         "@type": "WebApplication",
@@ -78,6 +111,20 @@ export default function CalculatorSchema({
     ...mainEntity,
   };
 
+  const howToSchema = howToSteps && howToSteps.length > 0
+    ? {
+        "@context": "https://schema.org",
+        "@type": "HowTo",
+        name: `How to Use the ${name}`,
+        step: howToSteps.map((step, i) => ({
+          "@type": "HowToStep",
+          position: i + 1,
+          name: step.name,
+          text: step.text,
+        })),
+      }
+    : null;
+
   const safeStringify = (obj: unknown) =>
     JSON.stringify(obj).replace(/</g, "\\u003c");
 
@@ -95,6 +142,12 @@ export default function CalculatorSchema({
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: safeStringify(breadcrumbSchema) }}
       />
+      {howToSchema && (
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: safeStringify(howToSchema) }}
+        />
+      )}
     </>
   );
 }
